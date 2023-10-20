@@ -1,0 +1,268 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, NetEase Co, Ltd.
+# This file is distributed under the same license as the poco package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: poco \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-09-28 11:05+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.1\n"
+
+#: ../../index.rst:3
+msgid "Welcome to Poco (ポコ) documentation!"
+msgstr "欢迎使用Poco (ポコ) UI自动化框架"
+
+#: ../../index.rst:5
+msgid ""
+"**A cross-engine UI automation framework**. "
+"``Unity3D``/``cocos2dx-*``/``Android native APP``/``iOS native "
+"APP``/(Other engines SDK)/..."
+msgstr ""
+
+#: ../../index.rst:62
+msgid "Getting Started"
+msgstr "快速预览"
+
+#: ../../index.rst:70
+msgid "Install Poco and PocoSDK"
+msgstr "安装Poco和PocoSDK"
+
+#: ../../index.rst:72
+msgid ""
+"In order to use Poco, you must install Poco python library on your host "
+"and also install the `poco-sdk`_ in your game/app."
+msgstr "在电脑上安装poco，并把poco-sdk集成到游戏里"
+
+#: ../../index.rst:75
+msgid "**Poco** can be installed straightforward with ``pip`` command"
+msgstr "直接pip安装即可"
+
+#: ../../index.rst:81
+msgid "For **poco-sdk** integration please refer to `Integration Guide`_"
+msgstr ""
+"把sdk集成到游戏里请参考 `Integration Guide`_ 。 **网易自研引擎** 无需嵌入sdk，请在hunter上直接配置，见 "
+"`Integration Guide for NetEase`_ "
+
+#: ../../index.rst:85
+msgid "Using Poco as Python package"
+msgstr "如何使用"
+
+#: ../../index.rst:88
+msgid "Simple demo"
+msgstr "示例"
+
+#: ../../index.rst:90
+msgid ""
+"The following example shows a simple script on demo game using Unity3D. "
+"Check `More examples`_ section for more detailed info."
+msgstr ""
+"下面Unity3D的例子展示了最简单的用法，更多的例子请移步 `More examples`_. **网易自研引擎项目请参考** "
+"网易游戏项目测试脚本标准模板_ 来开始建立回归测试工程。"
+
+#: ../../index.rst:93
+msgid ""
+"First you should connect your Android phone, for example, via usb cable "
+"and enable the **ADB DEBUG MODE**."
+msgstr "首先请把usb线连上Android手机并打开 **adb调试模式** 。"
+
+#: ../../index.rst:118
+msgid "Tools for writing test scripts"
+msgstr "编写脚本专用工具(Tools)"
+
+#: ../../index.rst:120
+msgid ""
+"To retrieve the UI hierarchy of the game, please use our `AirtestIDE`_ "
+"(an IDE for writing test scripts) or standalone `PocoHierarchyViewer`_ "
+"(to viewer the hierarchy and attributes only but lightweight) !"
+msgstr ""
+"获取界面中的UI元素和开始编写脚本，请使用我们专门为您打造的 `AirtestIDE`_ 或轻量级的检视器 "
+"`PocoHierarchyViewer`_ 。 **网易自研引擎** 请直接使用 `Hunter内嵌inspector`_ ."
+
+#: ../../index.rst:126
+msgid "Use poco on platforms/engines"
+msgstr ""
+
+#: ../../index.rst:128
+msgid ""
+"This section guide you how to start to use poco to write your test cases "
+"on different platforms/engines."
+msgstr ""
+
+#: ../../index.rst:130 ../../index.rst:200
+msgid "`Unity3D`_"
+msgstr ""
+
+#: ../../index.rst:131 ../../index.rst:201
+msgid "`Android native apps`_"
+msgstr ""
+
+#: ../../index.rst:132 ../../index.rst:202
+msgid "`OSX apps`_"
+msgstr ""
+
+#: ../../index.rst:133 ../../index.rst:203
+msgid "`Windows apps`_"
+msgstr ""
+
+#: ../../index.rst:134 ../../index.rst:204
+msgid "`cocos2dx-lua`_"
+msgstr ""
+
+#: ../../index.rst:135 ../../index.rst:205
+msgid "`cocos2dx-js`_"
+msgstr ""
+
+#: ../../index.rst:136 ../../index.rst:206
+msgid "`Egret`_"
+msgstr ""
+
+#: ../../index.rst:147
+msgid "Tutorials and examples"
+msgstr "入门教学用例(Tutorials and examples)"
+
+#: ../../index.rst:149
+msgid "This section will let your know all basic features of poco."
+msgstr ""
+
+#: ../../index.rst:151
+msgid "`basic usage`_"
+msgstr "`基本用法 <basic usage_>`_ "
+
+#: ../../index.rst:152
+msgid "`interact with Buttons and Labels`_"
+msgstr "`Button和Label的交互 <interact with Buttons and Labels_>`_"
+
+#: ../../index.rst:153
+msgid "`drag and swipe operations`_"
+msgstr "`拖动和滑动(drag/swipe) <drag and swipe operations_>`_"
+
+#: ../../index.rst:154
+msgid "`advanced selections`_"
+msgstr "`复杂层次的UI选择 <advanced selections_>`_"
+
+#: ../../index.rst:155
+msgid "`play with coordinate system and local positioning`_"
+msgstr "`坐标系与局部定位 <play with coordinate system and local positioning_>`_"
+
+#: ../../index.rst:156
+msgid "`iteration over elements`_"
+msgstr "`遍历UI <iteration over elements_>`_"
+
+#: ../../index.rst:157
+msgid "`handling exceptions`_"
+msgstr "`异常处理 <handling exceptions_>`_"
+
+#: ../../index.rst:158
+msgid "`waiting for events`_"
+msgstr "`等待UI <waiting for events_>`_"
+
+#: ../../index.rst:159
+msgid "`play with unittest framework`_"
+msgstr "`使用单元测试框架 <play with unittest framework_>`_"
+
+#: ../../index.rst:160
+msgid "`optimize speed by freezing UI`_"
+msgstr "`冻结UI以加快一些速度 <optimize speed by freezing UI_>`_"
+
+#: ../../index.rst:176
+msgid "API reference"
+msgstr ""
+
+#: ../../index.rst:179
+msgid "Poco API"
+msgstr ""
+
+#: ../../index.rst:181
+msgid ""
+"You can find all functions/methods for writing test scripts under the "
+"following links."
+msgstr "大部分用于编写测试脚本的函数和成员方法在下面的API文档里可以查找"
+
+#: ../../index.rst:191
+msgid "Engine specific API"
+msgstr ""
+
+#: ../../index.rst:198
+msgid ""
+"`poco drivers (engine specific poco implementation) "
+"<source/doc/poco_drivers.html>`_"
+msgstr ""
+
+#: ../../index.rst:210
+msgid "Poco SDK API"
+msgstr ""
+
+#: ../../index.rst:230
+msgid "Dump UI hierarchy example"
+msgstr "如何用脚本抓取界面所有元素"
+
+#: ../../index.rst:232
+msgid ""
+"Poco defines an uniform format to serialize UI hierarchy for different "
+"game engines. This section shows how to dump UI hierarchy."
+msgstr "Poco为不同的引擎定义了标准的界面层次结构(hierarchy)格式，在任何游戏上使用dump方法都可以获得相同的结构。示例代码和层次结构格式如下。"
+
+#: ../../index.rst:245
+msgid ""
+"The following is the snippet of UI hierarchy. All UI elements are "
+"organized in `dict` representing the `tree` structure. More detailed info"
+" about properties are described in `.dumpHierarchy() "
+"<source/poco.sdk.AbstractDumper.html#poco.sdk.AbstractDumper.IDumper.dumpHierarchy>`_."
+msgstr "下面就是层次结构(hierarchy)的数据表示，用 ``dict`` 存储并都是可json序列化的。"
+
+#: ../../index.rst:289
+msgid "Join to discuss!"
+msgstr ""
+
+#: ../../index.rst:291
+msgid "`join slack`_"
+msgstr ""
+
+#~ msgid "`Unity3D <source/doc/driver/unity3d.html>`_"
+#~ msgstr ""
+
+#~ msgid "`Android native app <source/doc/driver/android-native-app.html>`_"
+#~ msgstr ""
+
+#~ msgid "`Windows app <source/doc/driver/windows-app.html>`_"
+#~ msgstr ""
+
+#~ msgid "`Unity3D <source/doc/drivers/unity3d.html>`_"
+#~ msgstr ""
+
+#~ msgid "`Android native app <source/doc/drivesr/android-native-app.html>`_"
+#~ msgstr ""
+
+#~ msgid "`Windows app <source/doc/drivers/windows-app.html>`_"
+#~ msgstr ""
+
+#~ msgid "`cocos2dx-lua <>`_"
+#~ msgstr ""
+
+#~ msgid "`cocos2dx-js <>`_"
+#~ msgstr ""
+
+#~ msgid "`Unity3D <source/poco.drivers.unity3d.unity3d_poco.html>`_"
+#~ msgstr ""
+
+#~ msgid "`Android native app <source/poco.drivers.android.uiautomation.html>`_"
+#~ msgstr ""
+
+#~ msgid "`iOS native app <source/poco.drivers.ios.html>`_"
+#~ msgstr ""
+
+#~ msgid "`cocos2dx-lua <source/poco.drivers.std.html>`_"
+#~ msgstr ""
+
+#~ msgid "`cocos2dx-js <source/poco.drivers.cocosjs.html>`_"
+#~ msgstr ""
+

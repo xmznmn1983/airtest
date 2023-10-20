@@ -1,0 +1,103 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, NetEase Co, Ltd.
+# This file is distributed under the same license as the poco package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: poco \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-12-10 14:16+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.1\n"
+
+#: ../../source/poco.drivers.unity3d.unity3d_poco.rst:2
+msgid "poco.drivers.unity3d.unity3d\\_poco module"
+msgstr ""
+
+#: of poco.drivers.unity3d.unity3d_poco.UnityPoco:1
+msgid "基类：:class:`poco.drivers.std.StdPoco`"
+msgstr ""
+
+#: of poco.drivers.unity3d.unity3d_poco.UnityPoco:1
+msgid "Poco Unity3D implementation."
+msgstr ""
+
+#: of poco.drivers.unity3d.unity3d_poco.UnityPoco
+msgid "参数"
+msgstr ""
+
+#: of poco.drivers.unity3d.unity3d_poco.UnityPoco:3
+msgid "the endpoint of your Unity3D game, default to ``(\"localhost\", 5001)``"
+msgstr ""
+
+#: of poco.drivers.unity3d.unity3d_poco.UnityPoco:5
+msgid ""
+"whether your Unity3D game is running in UnityEditor or not. default to "
+"``False``"
+msgstr ""
+
+#: of poco.drivers.unity3d.unity3d_poco.UnityPoco:7
+msgid ""
+"whether connect to a default device if no devices selected manually. "
+"default to ``True``. device (:py:obj:`Device`): "
+":py:obj:`airtest.core.device.Device` instance provided by ``airtest``. "
+"leave the parameter default and the default device will be chosen. more "
+"details refer to ``airtest doc``"
+msgstr ""
+
+#: of poco.drivers.unity3d.unity3d_poco.UnityPoco:12
+msgid "see :py:class:`poco.pocofw.Poco`"
+msgstr ""
+
+#: of poco.drivers.unity3d.unity3d_poco.UnityPoco:15
+msgid "实际案例"
+msgstr ""
+
+#: of poco.drivers.unity3d.unity3d_poco.UnityPoco:16
+msgid ""
+"If your game is running on Android, you could initialize poco instance by"
+" using following snippet::"
+msgstr ""
+
+#~ msgid "whether your Unity3D game is running in UnityEditor or not"
+#~ msgstr ""
+
+#~ msgid "see :py:obj:`poco.pocofw.Poco.__init__`"
+#~ msgstr ""
+
+#~ msgid "see :py:meth:`poco.pocofw.Poco.__init__`"
+#~ msgstr ""
+
+#~ msgid "Bases: :class:`poco.pocofw.Poco`"
+#~ msgstr ""
+
+#~ msgid "poco\\.drivers\\.unity3d\\.unity3d\\_poco module"
+#~ msgstr ""
+
+#~ msgid "Bases: :class:`poco.drivers.std.StdPoco`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "whether connect to a default device "
+#~ "if no devices selected manually. default"
+#~ " to ``True``."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`airtest.core.device.Device` instance provided "
+#~ "by ``airtest``. leave the parameter "
+#~ "default and the default device will "
+#~ "be chosen. more details refer to "
+#~ "``airtest doc``"
+#~ msgstr ""
+
+#~ msgid "Examples"
+#~ msgstr ""
+

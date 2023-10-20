@@ -1,0 +1,131 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, NetEase Co, Ltd.
+# This file is distributed under the same license as the poco package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: poco \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-12-10 14:16+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.1\n"
+
+#: ../../source/poco.agent.rst:2
+msgid "poco.agent module"
+msgstr ""
+
+#: of poco.agent.PocoAgent:1
+msgid "基类：:class:`object`"
+msgstr ""
+
+#: of poco.agent.PocoAgent:1
+msgid "This is the agent class for poco to communicate with target device."
+msgstr ""
+
+#: of poco.agent.PocoAgent:3
+msgid "This class is an aggregation of 4 major interfaces for now."
+msgstr ""
+
+#: of poco.agent.PocoAgent:5
+msgid ""
+":py:class:`HierarchyInterface "
+"<poco.sdk.interfaces.hierarchy.HierarchyInterface>`: defines the "
+"hierarchy accessibility methods such as dump(crawl the whole UI tree), "
+"getAttr(retrieve attribute value by name)"
+msgstr ""
+
+#: of poco.agent.PocoAgent:7
+msgid ""
+":py:class:`InputInterface <poco.sdk.interfaces.input.InputInterface>`: "
+"defines the simulated input methods to allow inject simulated input on "
+"target device"
+msgstr ""
+
+#: of poco.agent.PocoAgent:9
+msgid ""
+":py:class:`ScreenInterface <poco.sdk.interfaces.screen.ScreenInterface>`:"
+" defines methods to access the screen surface"
+msgstr ""
+
+#: of poco.agent.PocoAgent:11
+msgid ""
+":py:class:`CommandInterface "
+"<poco.sdk.interfaces.command.CommandInterface>`: defines methods to "
+"communicate with target device in arbitrary way. This is optional."
+msgstr ""
+
+#: of poco.agent.PocoAgent.driver:1
+msgid ""
+"Return the driver of this agent related to. None if the driver is not "
+"ready to bind."
+msgstr ""
+
+#: of poco.agent.PocoAgent.driver poco.agent.PocoAgent.get_sdk_version
+#: poco.agent.PocoAgent.rpc
+msgid "返回"
+msgstr ""
+
+#: of poco.agent.PocoAgent.driver:3
+msgid "the driver of this agent related to."
+msgstr ""
+
+#: of poco.agent.PocoAgent.driver poco.agent.PocoAgent.get_sdk_version
+#: poco.agent.PocoAgent.rpc
+msgid "返回类型"
+msgstr ""
+
+#: of poco.agent.PocoAgent.driver:4
+msgid ":py:class:`inherit from Poco <poco.pocofw.Poco>`"
+msgstr ""
+
+#: of poco.agent.PocoAgent.get_sdk_version:1
+msgid ""
+"Retrieve the sdk version from remote runtime. Each poco agent "
+"implementation should override this method."
+msgstr ""
+
+#: of poco.agent.PocoAgent.get_sdk_version:3
+msgid ""
+"version string of the poco sdk. usually in \"0.0.0\" format. None if not "
+"provided by poco sdk."
+msgstr ""
+
+#: of poco.agent.PocoAgent.get_sdk_version:4
+msgid ":py:obj:`str`"
+msgstr ""
+
+#: of poco.agent.PocoAgent.rpc:1
+msgid "Return the interface of this agent handled."
+msgstr ""
+
+#: of poco.agent.PocoAgent.rpc:3
+msgid "the rpc interface of this agent handled."
+msgstr ""
+
+#: of poco.agent.PocoAgent.rpc:4
+msgid ":py:obj:`object`"
+msgstr ""
+
+#: of poco.agent.PocoAgent.rpc
+msgid "raises"
+msgstr ""
+
+#: of poco.agent.PocoAgent.rpc:6
+msgid ""
+":exc:`NotImplementedError` -- raises if the agent implementation dose not"
+" expose the rpc interface to user."
+msgstr ""
+
+#~ msgid "poco\\.agent module"
+#~ msgstr ""
+
+#~ msgid "Bases: :class:`object`"
+#~ msgstr ""
+

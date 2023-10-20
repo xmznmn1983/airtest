@@ -1,0 +1,56 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017, NetEase Co, Ltd.
+# This file is distributed under the same license as the poco package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: poco \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-12-10 14:16+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.1\n"
+
+#: ../../source/poco.utils.hunter.command.rst:2
+msgid "poco.utils.hunter.command module"
+msgstr ""
+
+#: of poco.utils.hunter.command.HunterCommand:1
+msgid "基类：:class:`poco.sdk.interfaces.command.CommandInterface`"
+msgstr ""
+
+#: of poco.utils.hunter.command.HunterCommand.command:1
+msgid ""
+"通过hunter调用gm指令，可调用hunter指令库中定义的所有指令，也可以调用text类型的gm指令 gm指令相关功能请参考safaia "
+"GM指令扩展模块"
+msgstr ""
+
+#: of poco.utils.hunter.command.HunterCommand.command
+msgid "参数"
+msgstr ""
+
+#: of poco.utils.hunter.command.HunterCommand.command:4
+msgid "指令"
+msgstr ""
+
+#: of poco.utils.hunter.command.HunterCommand.command:5
+msgid "语言，默认text"
+msgstr ""
+
+#: of poco.utils.hunter.command.HunterCommand.command
+msgid "返回"
+msgstr ""
+
+#: of poco.utils.hunter.command.HunterCommand.command:6
+msgid "None"
+msgstr ""
+
+#~ msgid "poco\\.utils\\.hunter\\.command module"
+#~ msgstr ""
+
