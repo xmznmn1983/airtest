@@ -6,6 +6,5 @@ if  not '%%a'=='List' (
 echo devices : %%a
 adb -s %%a uninstall com.bingo.cruise.free.best.top.game
 adb -s %%a install d:/Downloads/%var1%
-)
-)
+))
 pause
