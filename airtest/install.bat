@@ -1,6 +1,11 @@
-adb devices
-set /p var=input apk name : 
-echo %var%
-adb -s R58M66VY68Y uninstall com.bingo.cruise.free.best.top.game
-adb -s R58M66VY68Y install d:/Downloads/%var%
+@echo off
+adb devices >1.txt
+set /p var1=input apk name : 
+for /f %%a in (.\1.txt) do (
+if  not '%%a'=='List' (
+echo devices : %%a
+adb -s %%a uninstall com.bingo.cruise.free.best.top.game
+adb -s %%a install d:/Downloads/%var1%
+)
+)
 pause

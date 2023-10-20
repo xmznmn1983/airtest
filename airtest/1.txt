@@ -1,0 +1,4 @@
+List of devices attached
+R58M66VY68Y	device
+emulator-5554	device
+
