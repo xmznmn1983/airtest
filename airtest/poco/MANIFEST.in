@@ -1,4 +1,0 @@
-include poco/drivers/android/lib/*.apk
-include requirements.txt
-include LICENSE
-include **/*.pyi
