@@ -20,8 +20,8 @@ airtest_path = "E:/test/testtools/airtest"
 
 def main():
     if not cli_setup():
-        auto_setup(__file__, logdir=airtest_path,
-                   devices=["Android://127.0.0.1:5037/emulator-5554", ], project_root=airtest_path)
+        #auto_setup(__file__, logdir=airtest_path,
+        #           devices=["Android://127.0.0.1:5037/emulator-5554", ], project_root=airtest_path)
         # uninstall(app_package)
         time.sleep(1)
         # install(package_path)
