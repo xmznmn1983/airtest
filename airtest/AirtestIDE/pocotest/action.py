@@ -9,6 +9,7 @@ poco = UnityPoco()
 
 def click_button(button):
     if poco(button).exists():
+        poco(button).wait_for_appearance()
         poco(button).click()
     else:
         try:

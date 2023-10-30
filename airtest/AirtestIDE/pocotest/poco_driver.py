@@ -28,7 +28,7 @@ def main():
         time.sleep(1)
         start_app(app_package)
         time.sleep(10)
-        
+
         # print("start...")
         import action
         action.click_button(element_path.login)
