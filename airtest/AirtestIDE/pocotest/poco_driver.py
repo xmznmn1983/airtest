@@ -22,7 +22,7 @@ def main():
     if not cli_setup():
         auto_setup(__file__, logdir=airtest_path,
                    devices=["Android://127.0.0.1:5037/R58M66VY68Y"], project_root=airtest_path)
-        # uninstall(app_package)
+        uninstall(app_package)
         time.sleep(1)
         install(package_path)
         time.sleep(1)
