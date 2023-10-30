@@ -8,8 +8,8 @@ poco = UnityPoco()
 
 
 def click_button(button):
+    poco(button).wait_for_appearance()
     if poco(button).exists():
-        poco(button).wait_for_appearance()
         poco(button).click()
     else:
         try:
