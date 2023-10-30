@@ -35,6 +35,6 @@ def main():
         time.sleep(1)
         stop_app(app_package)
         # generate html report
-    simple_report(__file__, logpath=airtest_path + "/log", output="111.html")
+    simple_report(__file__, logpath=True, output="111.html")
 
 
