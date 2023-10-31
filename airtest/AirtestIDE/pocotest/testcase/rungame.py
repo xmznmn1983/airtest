@@ -19,10 +19,10 @@ class BingoVTestCase(unittest.TestCase):
         self.log_path = "E:\\test\\testtools\\airtest\\log"
         self.test_device = "Android://127.0.0.1:5037/R58M66VY68Y"
 
-    def runGame(self):
+    def test_runGame(self):
         if not cli_setup():
-            auto_setup(__file__, logdir=self.test_log,
-                       devices=[self.test_device], project_root=self.log_path)
+            auto_setup(__file__, logdir=self.log_path,
+                       devices=[self.test_device], project_root=self.test_log)
         uninstall(self.app_package)
         time.sleep(1)
         install(self.package_path)
