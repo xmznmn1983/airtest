@@ -41,5 +41,4 @@ class Start(BingoVTestCase):
         simple_report(__file__)
 
 
-if __name__ in '__main__':
-    Start()
+
