@@ -1,9 +1,8 @@
 # -*- encoding=utf8 -*-
 __author__ = "joycastle"
 
+import time
 from poco.drivers.unity3d import UnityPoco
-import element_path
-
 poco = UnityPoco()
 
 
