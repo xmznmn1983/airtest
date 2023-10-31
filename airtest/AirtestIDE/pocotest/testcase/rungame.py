@@ -1,11 +1,13 @@
 import sys
+import unittest
+
 sys.path.append("C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\_airtest\\airtest\\AirtestIDE\\pocotest")
-from poco_driver import BingoVTestCase
 from airtest.core.api import *
 from airtest.report.report import simple_report
+from airtest.cli.parser import cli_setup
+from airtest.core.api import *
 
-
-class Start(BingoVTestCase):
+class BingoVTestCase(unittest.TestCase):
 
     def setUp(self):
         os.system("adb devices")
@@ -13,8 +15,14 @@ class Start(BingoVTestCase):
         self.package_path = "D:/Downloads/BingoVoyage_dev_android_package_1613_pocotest_test_1.22.1.apk"
         import element_path
         self.element_path = element_path
-    def runGame(self):
+        self.test_log = "E:\\test\\testtools\\airtest"
+        self.log_path = "E:\\test\\testtools\\airtest\\log"
+        self.test_device = "Android://127.0.0.1:5037/R58M66VY68Y"
 
+    def runGame(self):
+        if not cli_setup():
+            auto_setup(__file__, logdir=self.test_log,
+                       devices=[self.test_device], project_root=self.log_path)
         uninstall(self.app_package)
         time.sleep(1)
         install(self.package_path)
@@ -34,5 +42,3 @@ class Start(BingoVTestCase):
 
     def tearDown(self):
         simple_report(__file__)
-
-

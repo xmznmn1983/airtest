@@ -1,5 +1,7 @@
+import sys
+sys.path.append("C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\_airtest\\airtest\\AirtestIDE\\pocotest")
 import unittest
 
-from testcase.rungame import Start
+
 if __name__ in '__main__':
     unittest.main()
