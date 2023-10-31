@@ -1,5 +1,6 @@
-import sys
-sys.path.append('.')
+import sys, os
+basedir2=os.path.dirname(os.path.dirname(__file__))
+sys.path.append(basedir2)
 from poco_driver import BingoVTestCase
 from airtest.cli.parser import cli_setup
 from airtest.core.api import *
