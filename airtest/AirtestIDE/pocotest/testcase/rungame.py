@@ -25,7 +25,7 @@ class BingoVTestCase(unittest.TestCase):
                        devices=[self.test_device], project_root=self.test_log)
 
 
-    def runGame(self):
+    def test_runGame(self):
 
         uninstall(self.app_package)
         time.sleep(1)
