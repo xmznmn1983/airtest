@@ -1,7 +1,8 @@
+import sys
+sys.path.append('.')
 from pocotest.poco_driver import BingoVTestCase
 from airtest.cli.parser import cli_setup
 from airtest.core.api import *
-from poco.drivers.unity3d import UnityPoco
 from airtest.report.report import simple_report
 
 

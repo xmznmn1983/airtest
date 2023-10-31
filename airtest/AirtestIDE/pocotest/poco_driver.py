@@ -2,12 +2,8 @@
 __author__ = "joycastle"
 
 import sys
-from unittest.case import TestCase
 sys.path.append('.')
-from airtest.core.api import *
-from airtest.cli.parser import cli_setup
-from pocounit.addons.poco.action_tracking import ActionTracker
-from airtest.report.report import simple_report
+from unittest.case import TestCase
 from poco.drivers.unity3d import UnityPoco
 
 
