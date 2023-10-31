@@ -9,7 +9,10 @@ class Start(BingoVTestCase):
 
     def setUp(self):
         os.system("adb devices")
-
+        self.app_package = "com.bingo.cruise.free.best.top.game"
+        self.package_path = "D:/Downloads/BingoVoyage_dev_android_package_1613_pocotest_test_1.22.1.apk"
+        import pocotest.element_path
+        self.element_path = pocotest.element_path
     def runGame(self):
 
         uninstall(self.app_package)
