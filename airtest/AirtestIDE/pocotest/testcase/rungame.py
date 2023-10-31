@@ -10,7 +10,7 @@ from airtest.core.api import *
 class BingoVTestCase(unittest.TestCase):
 
 
-    def __init__(self, methodName=None):
+    def __init__(self, methodName="None"):
         super().__init__(methodName)
         os.system("adb devices")
         self.app_package = "com.bingo.cruise.free.best.top.game"
