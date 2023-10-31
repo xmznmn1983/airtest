@@ -1,4 +1,5 @@
 import os, sys
-sys.path.append("pocotest")
+basedir2 = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
+sys.path.append(basedir2)
 print(sys.path)
 #print(sys.path.append(basedir2))
