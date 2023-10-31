@@ -1,6 +1,4 @@
-import os
-basedir2=os.path.dirname(os.path.dirname(__file__))
-basedir1=os.path.dirname(__file__)
-
-print(basedir2)
-print(basedir1)
+import os, sys
+sys.path.append("pocotest")
+print(sys.path)
+#print(sys.path.append(basedir2))
