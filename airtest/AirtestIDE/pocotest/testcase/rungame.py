@@ -8,7 +8,7 @@ from airtest.report.report import simple_report
 
 class Start(BingoVTestCase):
 
-    def __init__(self):
+    def setUp(self):
         self.log = "E:\\test\\testtools\\airtest"
         self.airtest_path = "E:\\test\\testtools\\airtest\\log"
         self.app_package = "com.bingo.cruise.free.best.top.game"
@@ -18,7 +18,7 @@ class Start(BingoVTestCase):
         self.element_path = pocotest.element_path
         os.system("adb devices")
 
-    def setUp(self):
+    def runGame(self):
         if not cli_setup():
             auto_setup(__file__, logdir=self.log,
                        devices=[self.android_device], project_root=self.airtest_path)
