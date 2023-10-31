@@ -5,4 +5,4 @@ from testcase.rungame import BingoVTestCase as BV
 
 if __name__ in '__main__':
     BV().setUp()
-    BV().test_runGame()
+    BV().runGame()
