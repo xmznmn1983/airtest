@@ -9,7 +9,9 @@ from airtest.core.api import *
 
 class BingoVTestCase(unittest.TestCase):
 
-    def setUp(self):
+
+    def __init__(self, methodName=None):
+        super().__init__(methodName)
         os.system("adb devices")
         self.app_package = "com.bingo.cruise.free.best.top.game"
         self.package_path = "D:/Downloads/BingoVoyage_dev_android_package_1613_pocotest_test_1.22.1.apk"
@@ -21,6 +23,7 @@ class BingoVTestCase(unittest.TestCase):
         if not cli_setup():
             auto_setup(__file__, logdir=self.test_log,
                        devices=[self.test_device], project_root=self.test_log)
+
 
     def runGame(self):
 
