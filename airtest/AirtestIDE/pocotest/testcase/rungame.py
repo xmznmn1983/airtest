@@ -1,6 +1,6 @@
 import sys
 sys.path.append("pocotest")
-from poco_driver import BingoVTestCase
+from pocotest.poco_driver import BingoVTestCase
 from airtest.cli.parser import cli_setup
 from airtest.core.api import *
 from airtest.report.report import simple_report
