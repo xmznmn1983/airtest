@@ -1,7 +1,7 @@
-import sys
+import sys, os
 
-sys.path.append("C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\_airtest\\airtest\\AirtestIDE\\pocotest")
-from testcase.rungame import BingoVTestCase as BV
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+from rungame import BingoVTestCase as BV
 
 if __name__ in '__main__':
     BV().tearDown()
