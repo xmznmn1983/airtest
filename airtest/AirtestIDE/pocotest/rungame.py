@@ -14,7 +14,7 @@ class BingoVTestCase:
         self.element_path = element_path
         self.test_log = os.path.dirname(os.path.abspath(__file__)) + "\\report"
         self.log_path = os.path.dirname(os.path.abspath(__file__)) + "\\report\\log"
-        self.test_device = "Android://127.0.0.1:5037/emulator-5554"
+        self.test_device = "Android://127.0.0.1:5037/R58M66VY68Y"
         if not cli_setup():
             auto_setup(__file__, logdir=self.log_path,
                        devices=[self.test_device], project_root=self.test_log)
