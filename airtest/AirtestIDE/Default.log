@@ -1,0 +1,861 @@
+2023-10-19 18:07:44,192 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe devices
+2023-10-19 18:07:52,768 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 wait-for-device
+2023-10-19 18:07:52,791 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk
+2023-10-19 18:07:52,824 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell ls -l /data/local/tmp/rotationwatcher.jar
+2023-10-19 18:07:52,857 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 push D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\apks\rotationwatcher.jar /data/local/tmp/rotationwatcher.jar
+2023-10-19 18:07:52,887 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell chmod 755 /data/local/tmp/rotationwatcher.jar
+2023-10-19 18:07:52,916 - install rotationwacher finished
+2023-10-19 18:07:52,916 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell app_process -Djava.class.path=/data/local/tmp/rotationwatcher.jar /data/local/tmp com.example.rotationwatcher.Main
+2023-10-19 18:07:53,140 - [rotation_server]b'270'
+2023-10-19 18:07:53,920 - update orientation None->3
+2023-10-19 18:07:53,920 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell wm size
+2023-10-19 18:07:53,968 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell getprop ro.sf.lcd_density
+2023-10-19 18:07:53,997 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell dumpsys SurfaceFlinger
+2023-10-19 18:07:54,043 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell getevent -p
+2023-10-19 18:07:54,250 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell ls /data/local/tmp/minicap
+2023-10-19 18:07:54,282 - install minicap
+2023-10-19 18:07:54,282 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell getprop ro.product.cpu.abi
+2023-10-19 18:07:54,312 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell getprop ro.build.version.preview_sdk
+2023-10-19 18:07:54,340 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell getprop ro.build.version.release
+2023-10-19 18:07:54,372 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 push D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\stf_libs\x86_64\minicap /data/local/tmp/minicap
+2023-10-19 18:07:54,431 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell chmod 755 /data/local/tmp/minicap
+2023-10-19 18:07:54,463 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 push D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\stf_libs\minicap-shared/aosp/libs/android-28/x86_64/minicap.so /data/local/tmp/minicap.so
+2023-10-19 18:07:54,492 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell chmod 755 /data/local/tmp/minicap.so
+2023-10-19 18:07:54,521 - minicap installation finished
+2023-10-19 18:07:54,521 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -n 'airtest_minicap' -P 1920x1080@1920x1080/270 -s
+2023-10-19 18:07:54,716 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --no-rebind tcp:15266 localabstract:minicap_15266
+2023-10-19 18:07:54,747 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -n 'minicap_15266' -P 1920x1080@1422x800/270 -l 2>&1
+2023-10-19 18:07:54,797 - [minicap_server]b'PID: 15591'
+2023-10-19 18:07:54,798 - [minicap_server]b'INFO: Using projection 1920x1080@1422x800/3'
+2023-10-19 18:07:54,798 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:241) Creating SurfaceComposerClient'
+2023-10-19 18:07:54,799 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:244) Performing SurfaceComposerClient init check'
+2023-10-19 18:07:54,799 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:255) Creating virtual display'
+2023-10-19 18:07:54,799 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:261) Creating buffer queue'
+2023-10-19 18:07:54,799 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:264) Setting buffer options'
+2023-10-19 18:07:54,799 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:268) Creating CPU consumer'
+2023-10-19 18:07:54,799 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:272) Creating frame waiter'
+2023-10-19 18:07:54,800 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:276) Publishing virtual display'
+2023-10-19 18:07:54,837 - [minicap_server]b'INFO: (jni/minicap/JpgEncoder.cpp:64) Allocating 6268932 bytes for JPG encoder'
+2023-10-19 18:07:54,838 - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:489) Server start'
+2023-10-19 18:07:54,839 - (1, 24, 15591, 1920, 1080, 1422, 800, 3, 2)
+2023-10-19 18:07:54,839 - quirk_flag found, going to resetup
+2023-10-19 18:07:54,839 - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:492) New client connection'
+2023-10-19 18:07:54,839 - minicap stream ends
+2023-10-19 18:07:54,851 - [minicap_server]b''
+2023-10-19 18:07:54,852 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --remove tcp:15266
+2023-10-19 18:07:54,877 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --no-rebind tcp:17225 localabstract:minicap_17225
+2023-10-19 18:07:54,900 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -n 'minicap_17225' -P 1080x1920@800x1422/0 -l 2>&1
+2023-10-19 18:07:54,944 - [minicap_server]b'PID: 15596'
+2023-10-19 18:07:54,944 - [minicap_server]b'INFO: Using projection 1080x1920@800x1422/0'
+2023-10-19 18:07:54,945 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:241) Creating SurfaceComposerClient'
+2023-10-19 18:07:54,945 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:244) Performing SurfaceComposerClient init check'
+2023-10-19 18:07:54,946 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:255) Creating virtual display'
+2023-10-19 18:07:54,946 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:261) Creating buffer queue'
+2023-10-19 18:07:54,946 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:264) Setting buffer options'
+2023-10-19 18:07:54,946 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:268) Creating CPU consumer'
+2023-10-19 18:07:54,947 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:272) Creating frame waiter'
+2023-10-19 18:07:54,947 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:276) Publishing virtual display'
+2023-10-19 18:07:54,984 - [minicap_server]b'INFO: (jni/minicap/JpgEncoder.cpp:64) Allocating 6268932 bytes for JPG encoder'
+2023-10-19 18:07:54,984 - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:489) Server start'
+2023-10-19 18:07:54,985 - (1, 24, 15596, 1080, 1920, 800, 1422, 0, 2)
+2023-10-19 18:07:54,986 - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:492) New client connection'
+2023-10-19 18:07:55,719 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell getprop ro.product.cpu.abi
+2023-10-19 18:07:55,749 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk
+2023-10-19 18:07:55,784 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell ls -l /data/local/tmp/minitouch
+2023-10-19 18:07:55,821 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 push D:\\Downloads\\AirtestIDE-win-1.2.15\\AirtestIDE\\airtest\\core\\android\\static\\stf_libs\\x86_64\\minitouch /data/local/tmp/minitouch
+2023-10-19 18:07:55,852 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell chmod 755 /data/local/tmp/minitouch
+2023-10-19 18:07:55,884 - install_minitouch finished
+2023-10-19 18:07:55,884 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --no-rebind tcp:17082 localabstract:minitouch_17082
+2023-10-19 18:07:55,912 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell /data/local/tmp/minitouch -n 'minitouch_17082' 2>&1
+2023-10-19 18:07:55,956 - [minitouch_server]b'Note: device /dev/input/mouse1 is not supported by libevdev'
+2023-10-19 18:07:56,001 - [minitouch_server]b'Note: device /dev/input/mouse0 is not supported by libevdev'
+2023-10-19 18:07:56,067 - [minitouch_server]b'Note: device /dev/input/mice is not supported by libevdev'
+2023-10-19 18:07:56,110 - [minitouch_server]b'Type B touch device input (1919x1079 with 16 contacts) detected on /dev/input/event2 (score 22453)'
+2023-10-19 18:07:56,111 - [minitouch_server]b'Note: hard-limiting maximum number of contacts to 10'
+2023-10-19 18:07:56,112 - [minitouch_server]b'Connection established'
+2023-10-19 18:07:56,112 - minitouch header:b'v 1\n^ 10 1919 1079 2\n$ 15648\n'
+2023-10-19 18:08:05,953 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell dumpsys activity top
+2023-10-19 18:08:06,048 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell dumpsys package com.netease.open.pocoservice
+2023-10-19 18:08:06,107 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 install D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\poco\drivers\android\lib\pocoservice-debug.apk
+2023-10-19 18:08:06,676 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --no-rebind tcp:12506 tcp:10080
+2023-10-19 18:08:06,702 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --no-rebind tcp:18576 tcp:10081
+2023-10-19 18:08:06,740 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell am start -n com.netease.open.pocoservice/.TestActivity
+2023-10-19 18:08:06,834 - [rotation_server]b'0'
+2023-10-19 18:08:06,835 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell am instrument -w -e debug false -e class com.netease.open.pocoservice.InstrumentedTestAsLauncher com.netease.open.pocoservice/androidx.test.runner.AndroidJUnitRunner
+2023-10-19 18:08:06,946 - update orientation 3->0
+2023-10-19 18:08:06,946 - update_rotation: 0
+2023-10-19 18:08:07,016 - do update rotation
+2023-10-19 18:08:07,040 - [minicap_server]b''
+2023-10-19 18:08:07,041 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --remove tcp:17225
+2023-10-19 18:08:07,068 - minicap stream ends
+2023-10-19 18:08:07,068 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --no-rebind tcp:18381 localabstract:minicap_18381
+2023-10-19 18:08:07,094 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -n 'minicap_18381' -P 1920x1080@1422x800/0 -l 2>&1
+2023-10-19 18:08:07,177 - [minicap_server]b'PID: 16018'
+2023-10-19 18:08:07,177 - [minicap_server]b'INFO: Using projection 1920x1080@1422x800/0'
+2023-10-19 18:08:07,188 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:241) Creating SurfaceComposerClient'
+2023-10-19 18:08:07,189 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:244) Performing SurfaceComposerClient init check'
+2023-10-19 18:08:07,189 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:255) Creating virtual display'
+2023-10-19 18:08:07,189 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:261) Creating buffer queue'
+2023-10-19 18:08:07,189 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:264) Setting buffer options'
+2023-10-19 18:08:07,189 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:268) Creating CPU consumer'
+2023-10-19 18:08:07,190 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:272) Creating frame waiter'
+2023-10-19 18:08:07,190 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:276) Publishing virtual display'
+2023-10-19 18:08:07,225 - [minicap_server]b'INFO: (jni/minicap/JpgEncoder.cpp:64) Allocating 6268932 bytes for JPG encoder'
+2023-10-19 18:08:07,226 - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:489) Server start'
+2023-10-19 18:08:07,227 - (1, 24, 16018, 1920, 1080, 1422, 800, 0, 2)
+2023-10-19 18:08:07,227 - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:492) New client connection'
+2023-10-19 18:08:07,326 - [rotation_server]b'270'
+2023-10-19 18:08:07,969 - update orientation 0->3
+2023-10-19 18:08:07,969 - update_rotation: 270
+2023-10-19 18:08:07,985 - do update rotation
+2023-10-19 18:08:08,014 - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:523) recv error, close connection. errno=9'
+2023-10-19 18:08:08,026 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --remove tcp:18381
+2023-10-19 18:08:08,054 - minicap stream ends
+2023-10-19 18:08:08,054 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --no-rebind tcp:14564 localabstract:minicap_14564
+2023-10-19 18:08:08,079 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -n 'minicap_14564' -P 1080x1920@800x1422/0 -l 2>&1
+2023-10-19 18:08:08,170 - [minicap_server]b'PID: 16126'
+2023-10-19 18:08:08,171 - [minicap_server]b'INFO: Using projection 1080x1920@800x1422/0'
+2023-10-19 18:08:08,173 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:241) Creating SurfaceComposerClient'
+2023-10-19 18:08:08,173 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:244) Performing SurfaceComposerClient init check'
+2023-10-19 18:08:08,173 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:255) Creating virtual display'
+2023-10-19 18:08:08,174 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:261) Creating buffer queue'
+2023-10-19 18:08:08,174 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:264) Setting buffer options'
+2023-10-19 18:08:08,174 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:268) Creating CPU consumer'
+2023-10-19 18:08:08,174 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:272) Creating frame waiter'
+2023-10-19 18:08:08,175 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:276) Publishing virtual display'
+2023-10-19 18:08:08,193 - [minicap_server]b'INFO: (jni/minicap/JpgEncoder.cpp:64) Allocating 6268932 bytes for JPG encoder'
+2023-10-19 18:08:08,193 - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:489) Server start'
+2023-10-19 18:08:08,196 - (1, 24, 16126, 1080, 1920, 800, 1422, 0, 2)
+2023-10-19 18:08:08,197 - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:492) New client connection'
+2023-10-19 19:06:53,236 - [minitouch_server]b''
+2023-10-19 19:06:53,239 - [rotation_server]b''
+2023-10-19 19:06:53,239 - [minicap_server]b''
+2023-10-19 19:06:53,300 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --no-rebind tcp:12122 localabstract:minicap_12122
+2023-10-19 19:06:53,996 - orientationWatcher has ended
+2023-10-23 19:31:38,377 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe devices
+2023-10-23 19:37:11,459 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe devices
+2023-10-23 19:41:01,941 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe devices
+2023-10-23 19:42:23,242 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe devices
+2023-10-24 11:13:32,418 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe devices
+2023-10-24 11:59:41,332 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe devices
+2023-10-24 12:01:34,655 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 wait-for-device
+2023-10-24 12:01:34,683 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk
+2023-10-24 12:01:34,721 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell ls -l /data/local/tmp/rotationwatcher.jar
+2023-10-24 12:01:34,771 - install_rotationwatcher skipped
+2023-10-24 12:01:34,771 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell app_process -Djava.class.path=/data/local/tmp/rotationwatcher.jar /data/local/tmp com.example.rotationwatcher.Main
+2023-10-24 12:01:34,993 - [rotation_server]b'270'
+2023-10-24 12:01:35,774 - update orientation None->3
+2023-10-24 12:01:35,774 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell wm size
+2023-10-24 12:01:35,830 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell getprop ro.sf.lcd_density
+2023-10-24 12:01:35,862 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell dumpsys SurfaceFlinger
+2023-10-24 12:01:35,919 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell getevent -p
+2023-10-24 12:01:36,176 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell ls /data/local/tmp/minicap
+2023-10-24 12:01:36,207 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell ls /data/local/tmp/minicap.so
+2023-10-24 12:01:36,239 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -v 2>&1
+2023-10-24 12:01:36,297 - version:5
+2023-10-24 12:01:36,297 - skip install minicap
+2023-10-24 12:01:36,297 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -n 'airtest_minicap' -P 1920x1080@1920x1080/270 -s
+2023-10-24 12:01:36,442 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --no-rebind tcp:19227 localabstract:minicap_19227
+2023-10-24 12:01:36,480 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -n 'minicap_19227' -P 1920x1080@1422x800/270 -l 2>&1
+2023-10-24 12:01:36,523 - [minicap_server]b'PID: 5192'
+2023-10-24 12:01:36,523 - [minicap_server]b'INFO: Using projection 1920x1080@1422x800/3'
+2023-10-24 12:01:36,523 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:241) Creating SurfaceComposerClient'
+2023-10-24 12:01:36,523 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:244) Performing SurfaceComposerClient init check'
+2023-10-24 12:01:36,524 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:255) Creating virtual display'
+2023-10-24 12:01:36,524 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:261) Creating buffer queue'
+2023-10-24 12:01:36,524 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:264) Setting buffer options'
+2023-10-24 12:01:36,524 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:268) Creating CPU consumer'
+2023-10-24 12:01:36,524 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:272) Creating frame waiter'
+2023-10-24 12:01:36,524 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:276) Publishing virtual display'
+2023-10-24 12:01:36,544 - [minicap_server]b'INFO: (jni/minicap/JpgEncoder.cpp:64) Allocating 6268932 bytes for JPG encoder'
+2023-10-24 12:01:36,545 - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:489) Server start'
+2023-10-24 12:01:36,546 - (1, 24, 5192, 1920, 1080, 1422, 800, 3, 2)
+2023-10-24 12:01:36,546 - quirk_flag found, going to resetup
+2023-10-24 12:01:36,546 - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:492) New client connection'
+2023-10-24 12:01:36,546 - minicap stream ends
+2023-10-24 12:01:36,558 - [minicap_server]b''
+2023-10-24 12:01:36,559 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --remove tcp:19227
+2023-10-24 12:01:36,584 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --no-rebind tcp:19741 localabstract:minicap_19741
+2023-10-24 12:01:36,609 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -n 'minicap_19741' -P 1080x1920@800x1422/0 -l 2>&1
+2023-10-24 12:01:36,653 - [minicap_server]b'PID: 5198'
+2023-10-24 12:01:36,653 - [minicap_server]b'INFO: Using projection 1080x1920@800x1422/0'
+2023-10-24 12:01:36,653 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:241) Creating SurfaceComposerClient'
+2023-10-24 12:01:36,654 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:244) Performing SurfaceComposerClient init check'
+2023-10-24 12:01:36,654 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:255) Creating virtual display'
+2023-10-24 12:01:36,654 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:261) Creating buffer queue'
+2023-10-24 12:01:36,654 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:264) Setting buffer options'
+2023-10-24 12:01:36,655 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:268) Creating CPU consumer'
+2023-10-24 12:01:36,655 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:272) Creating frame waiter'
+2023-10-24 12:01:36,655 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:276) Publishing virtual display'
+2023-10-24 12:01:36,677 - [minicap_server]b'INFO: (jni/minicap/JpgEncoder.cpp:64) Allocating 6268932 bytes for JPG encoder'
+2023-10-24 12:01:36,678 - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:489) Server start'
+2023-10-24 12:01:36,679 - (1, 24, 5198, 1080, 1920, 800, 1422, 0, 2)
+2023-10-24 12:01:36,679 - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:492) New client connection'
+2023-10-24 12:01:37,444 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell getprop ro.product.cpu.abi
+2023-10-24 12:01:37,478 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk
+2023-10-24 12:01:37,512 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell ls -l /data/local/tmp/minitouch
+2023-10-24 12:01:37,554 - install_minitouch skipped
+2023-10-24 12:01:37,554 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --no-rebind tcp:18249 localabstract:minitouch_18249
+2023-10-24 12:01:37,580 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell /data/local/tmp/minitouch -n 'minitouch_18249' 2>&1
+2023-10-24 12:01:37,668 - [minitouch_server]b'Note: device /dev/input/mouse1 is not supported by libevdev'
+2023-10-24 12:01:37,714 - [minitouch_server]b'Note: device /dev/input/mouse0 is not supported by libevdev'
+2023-10-24 12:01:37,764 - [minitouch_server]b'Note: device /dev/input/mice is not supported by libevdev'
+2023-10-24 12:01:37,828 - [minitouch_server]b'Type B touch device input (1919x1079 with 16 contacts) detected on /dev/input/event2 (score 22453)'
+2023-10-24 12:01:37,828 - [minitouch_server]b'Note: hard-limiting maximum number of contacts to 10'
+2023-10-24 12:01:37,838 - [minitouch_server]b'Connection established'
+2023-10-24 12:01:37,844 - minitouch header:b'v 1\n^ 10 1919 1079 2\n$ 5209\n'
+2023-10-24 12:01:46,739 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell dumpsys activity top
+2023-10-24 12:01:46,870 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell dumpsys package com.netease.open.pocoservice
+2023-10-24 12:01:46,928 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --no-rebind tcp:19469 tcp:10080
+2023-10-24 12:01:46,967 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --no-rebind tcp:15648 tcp:10081
+2023-10-24 12:01:47,023 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell am start -n com.netease.open.pocoservice/.TestActivity
+2023-10-24 12:01:47,130 - [rotation_server]b'0'
+2023-10-24 12:01:47,130 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell am instrument -w -e debug false -e class com.netease.open.pocoservice.InstrumentedTestAsLauncher com.netease.open.pocoservice/androidx.test.runner.AndroidJUnitRunner
+2023-10-24 12:01:47,617 - [rotation_server]b'270'
+2023-10-24 12:01:47,815 - update orientation 3->0
+2023-10-24 12:01:47,815 - update_rotation: 0
+2023-10-24 12:01:47,815 - update orientation 0->3
+2023-10-24 12:01:47,815 - update_rotation: 270
+2023-10-24 12:01:47,839 - do update rotation
+2023-10-24 12:01:47,870 - [minicap_server]b''
+2023-10-24 12:01:47,871 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --remove tcp:19741
+2023-10-24 12:01:47,899 - minicap stream ends
+2023-10-24 12:01:47,900 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --no-rebind tcp:13319 localabstract:minicap_13319
+2023-10-24 12:01:47,925 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -n 'minicap_13319' -P 1080x1920@800x1422/0 -l 2>&1
+2023-10-24 12:01:48,005 - [minicap_server]b'PID: 5299'
+2023-10-24 12:01:48,006 - [minicap_server]b'INFO: Using projection 1080x1920@800x1422/0'
+2023-10-24 12:01:48,006 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:241) Creating SurfaceComposerClient'
+2023-10-24 12:01:48,006 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:244) Performing SurfaceComposerClient init check'
+2023-10-24 12:01:48,006 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:255) Creating virtual display'
+2023-10-24 12:01:48,006 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:261) Creating buffer queue'
+2023-10-24 12:01:48,007 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:264) Setting buffer options'
+2023-10-24 12:01:48,007 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:268) Creating CPU consumer'
+2023-10-24 12:01:48,007 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:272) Creating frame waiter'
+2023-10-24 12:01:48,007 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:276) Publishing virtual display'
+2023-10-24 12:01:48,035 - [minicap_server]b'INFO: (jni/minicap/JpgEncoder.cpp:64) Allocating 6268932 bytes for JPG encoder'
+2023-10-24 12:01:48,036 - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:489) Server start'
+2023-10-24 12:01:48,037 - (1, 24, 5299, 1080, 1920, 800, 1422, 0, 2)
+2023-10-24 12:01:48,038 - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:492) New client connection'
+2023-10-24 12:02:21,718 - [minicap_server]b''
+2023-10-24 12:02:21,719 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --remove tcp:13319
+2023-10-24 12:02:21,743 - minicap stream ends
+2023-10-24 12:02:21,755 - [rotation_server]b''
+2023-10-24 12:02:21,758 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe devices
+2023-10-24 12:02:25,186 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell am force-stop com.netease.open.pocoservice
+2023-10-24 12:02:46,248 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe devices
+2023-10-24 12:02:59,386 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell dumpsys activity top
+2023-10-24 12:02:59,459 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell dumpsys package com.netease.open.pocoservice
+2023-10-24 12:02:59,510 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --no-rebind tcp:18907 tcp:10080
+2023-10-24 12:02:59,534 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --no-rebind tcp:15182 tcp:10081
+2023-10-24 12:02:59,571 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell am start -n com.netease.open.pocoservice/.TestActivity
+2023-10-24 12:02:59,644 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell am instrument -w -e debug false -e class com.netease.open.pocoservice.InstrumentedTestAsLauncher com.netease.open.pocoservice/androidx.test.runner.AndroidJUnitRunner
+2023-10-24 12:03:12,496 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 wait-for-device
+2023-10-24 12:03:12,521 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk
+2023-10-24 12:03:12,563 - Device:emulator-5554 updated <airtest.core.android.android.Android object at 0x00000234468357F0> -> <airtest.core.android.android.Android object at 0x000002343A3A5A20>
+2023-10-24 12:03:12,563 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell ls -l /data/local/tmp/rotationwatcher.jar
+2023-10-24 12:03:12,594 - install_rotationwatcher skipped
+2023-10-24 12:03:12,594 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell app_process -Djava.class.path=/data/local/tmp/rotationwatcher.jar /data/local/tmp com.example.rotationwatcher.Main
+2023-10-24 12:03:12,743 - [rotation_server]b'270'
+2023-10-24 12:03:13,598 - update orientation None->3
+2023-10-24 12:03:13,598 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell wm size
+2023-10-24 12:03:13,633 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell getprop ro.sf.lcd_density
+2023-10-24 12:03:13,661 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell dumpsys SurfaceFlinger
+2023-10-24 12:03:13,716 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell getevent -p
+2023-10-24 12:03:13,911 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell ls /data/local/tmp/minicap
+2023-10-24 12:03:13,964 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell ls /data/local/tmp/minicap.so
+2023-10-24 12:03:13,993 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -v 2>&1
+2023-10-24 12:03:14,036 - version:5
+2023-10-24 12:03:14,036 - skip install minicap
+2023-10-24 12:03:14,036 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -n 'airtest_minicap' -P 1920x1080@1920x1080/270 -s
+2023-10-24 12:03:14,181 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --no-rebind tcp:18816 localabstract:minicap_18816
+2023-10-24 12:03:14,206 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -n 'minicap_18816' -P 1920x1080@1422x800/270 -l 2>&1
+2023-10-24 12:03:14,261 - [minicap_server]b'PID: 5513'
+2023-10-24 12:03:14,261 - [minicap_server]b'INFO: Using projection 1920x1080@1422x800/3'
+2023-10-24 12:03:14,261 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:241) Creating SurfaceComposerClient'
+2023-10-24 12:03:14,262 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:244) Performing SurfaceComposerClient init check'
+2023-10-24 12:03:14,262 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:255) Creating virtual display'
+2023-10-24 12:03:14,262 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:261) Creating buffer queue'
+2023-10-24 12:03:14,262 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:264) Setting buffer options'
+2023-10-24 12:03:14,262 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:268) Creating CPU consumer'
+2023-10-24 12:03:14,262 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:272) Creating frame waiter'
+2023-10-24 12:03:14,262 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:276) Publishing virtual display'
+2023-10-24 12:03:14,280 - [minicap_server]b'INFO: (jni/minicap/JpgEncoder.cpp:64) Allocating 6268932 bytes for JPG encoder'
+2023-10-24 12:03:14,280 - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:489) Server start'
+2023-10-24 12:03:14,282 - (1, 24, 5513, 1920, 1080, 1422, 800, 3, 2)
+2023-10-24 12:03:14,282 - quirk_flag found, going to resetup
+2023-10-24 12:03:14,282 - minicap stream ends
+2023-10-24 12:03:14,282 - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:492) New client connection'
+2023-10-24 12:03:14,295 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --remove tcp:18816
+2023-10-24 12:03:14,321 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --no-rebind tcp:12499 localabstract:minicap_12499
+2023-10-24 12:03:14,345 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -n 'minicap_12499' -P 1080x1920@800x1422/0 -l 2>&1
+2023-10-24 12:03:14,388 - [minicap_server]b'PID: 5518'
+2023-10-24 12:03:14,388 - [minicap_server]b'INFO: Using projection 1080x1920@800x1422/0'
+2023-10-24 12:03:14,389 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:241) Creating SurfaceComposerClient'
+2023-10-24 12:03:14,389 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:244) Performing SurfaceComposerClient init check'
+2023-10-24 12:03:14,389 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:255) Creating virtual display'
+2023-10-24 12:03:14,390 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:261) Creating buffer queue'
+2023-10-24 12:03:14,390 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:264) Setting buffer options'
+2023-10-24 12:03:14,390 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:268) Creating CPU consumer'
+2023-10-24 12:03:14,390 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:272) Creating frame waiter'
+2023-10-24 12:03:14,390 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:276) Publishing virtual display'
+2023-10-24 12:03:14,414 - [minicap_server]b'INFO: (jni/minicap/JpgEncoder.cpp:64) Allocating 6268932 bytes for JPG encoder'
+2023-10-24 12:03:14,414 - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:489) Server start'
+2023-10-24 12:03:14,416 - (1, 24, 5518, 1080, 1920, 800, 1422, 0, 2)
+2023-10-24 12:03:14,416 - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:492) New client connection'
+2023-10-24 12:03:15,183 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell dumpsys activity top
+2023-10-24 12:03:15,405 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell dumpsys package com.netease.open.pocoservice
+2023-10-24 12:03:15,512 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --no-rebind tcp:19993 tcp:10080
+2023-10-24 12:03:15,583 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --no-rebind tcp:15267 tcp:10081
+2023-10-24 12:03:16,166 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell input tap 100 191
+2023-10-24 12:03:16,455 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell input tap 100 191
+2023-10-24 12:03:16,706 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell input tap 100 191
+2023-10-24 12:03:17,964 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell am force-stop com.netease.open.pocoservice
+2023-10-24 12:03:19,002 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell am start -n com.netease.open.pocoservice/.TestActivity
+2023-10-24 12:03:19,077 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell am instrument -w -e debug false -e class com.netease.open.pocoservice.InstrumentedTestAsLauncher com.netease.open.pocoservice/androidx.test.runner.AndroidJUnitRunner
+2023-10-24 12:03:19,089 - [rotation_server]b'0'
+2023-10-24 12:03:19,434 - [rotation_server]b'270'
+2023-10-24 12:03:19,612 - update orientation 3->0
+2023-10-24 12:03:19,624 - update_rotation: 0
+2023-10-24 12:03:19,630 - update orientation 0->3
+2023-10-24 12:03:19,631 - do update rotation
+2023-10-24 12:03:19,631 - update_rotation: 270
+2023-10-24 12:03:19,651 - [minicap_server]b''
+2023-10-24 12:03:19,667 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --remove tcp:12499
+2023-10-24 12:03:19,694 - minicap stream ends
+2023-10-24 12:03:19,694 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --no-rebind tcp:14241 localabstract:minicap_14241
+2023-10-24 12:03:19,719 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -n 'minicap_14241' -P 1080x1920@800x1422/0 -l 2>&1
+2023-10-24 12:03:19,762 - [minicap_server]b'PID: 5645'
+2023-10-24 12:03:19,763 - [minicap_server]b'INFO: Using projection 1080x1920@800x1422/0'
+2023-10-24 12:03:19,763 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:241) Creating SurfaceComposerClient'
+2023-10-24 12:03:19,763 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:244) Performing SurfaceComposerClient init check'
+2023-10-24 12:03:19,763 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:255) Creating virtual display'
+2023-10-24 12:03:19,763 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:261) Creating buffer queue'
+2023-10-24 12:03:19,764 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:264) Setting buffer options'
+2023-10-24 12:03:19,764 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:268) Creating CPU consumer'
+2023-10-24 12:03:19,764 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:272) Creating frame waiter'
+2023-10-24 12:03:19,764 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:276) Publishing virtual display'
+2023-10-24 12:03:19,778 - [minicap_server]b'INFO: (jni/minicap/JpgEncoder.cpp:64) Allocating 6268932 bytes for JPG encoder'
+2023-10-24 12:03:19,779 - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:489) Server start'
+2023-10-24 12:03:19,780 - (1, 24, 5645, 1080, 1920, 800, 1422, 0, 2)
+2023-10-24 12:03:19,780 - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:492) New client connection'
+2023-10-24 12:03:20,368 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell input tap 320 111
+2023-10-24 12:03:20,975 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell input tap 617 346
+2023-10-24 12:03:21,991 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell input tap 715 400
+2023-10-24 12:03:22,269 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell input tap 713 400
+2023-10-24 12:03:22,563 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell input tap 713 400
+2023-10-24 12:03:22,814 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell input tap 713 400
+2023-10-24 12:03:23,578 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell input tap 517 1551
+2023-10-24 12:03:43,966 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --no-rebind tcp:13944 tcp:5001
+2023-10-24 12:03:46,036 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell am force-stop com.netease.open.pocoservice
+2023-10-24 12:04:17,778 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --remove tcp:13944
+2023-10-24 12:04:22,094 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --no-rebind tcp:18134 tcp:5001
+2023-10-24 12:07:38,530 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell dumpsys window windows
+2023-10-24 12:08:17,800 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell input tap 644 1155
+2023-10-24 12:08:19,145 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell input tap 542 62
+2023-10-24 12:11:45,693 - [minicap_server]b''
+2023-10-24 12:11:45,694 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --remove tcp:14241
+2023-10-24 12:11:45,767 - minicap stream ends
+2023-10-24 12:11:45,794 - [rotation_server]b''
+2023-10-24 12:11:47,299 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe devices
+2023-10-24 12:11:47,371 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --remove tcp:18249
+2023-10-24 12:11:47,396 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --remove tcp:19469
+2023-10-24 12:11:47,419 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --remove tcp:15648
+2023-10-24 12:11:47,444 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --remove tcp:18907
+2023-10-24 12:11:47,468 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --remove tcp:15182
+2023-10-24 12:11:47,528 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --remove tcp:19993
+2023-10-24 12:11:47,554 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --remove tcp:15267
+2023-10-24 12:11:47,579 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --remove tcp:18134
+2023-10-24 12:11:47,615 - [minitouch_server]b''
+2023-10-24 12:11:47,616 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --remove tcp:18249
+2023-10-24 18:29:41,805 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe devices
+2023-10-25 15:32:28,807 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe devices
+2023-10-25 15:43:55,941 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe devices
+2023-10-25 15:44:25,930 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 wait-for-device
+2023-10-25 15:44:25,956 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk
+2023-10-25 15:44:26,013 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell ls -l /data/local/tmp/rotationwatcher.jar
+2023-10-25 15:44:26,049 - install_rotationwatcher skipped
+2023-10-25 15:44:26,049 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell app_process -Djava.class.path=/data/local/tmp/rotationwatcher.jar /data/local/tmp com.example.rotationwatcher.Main
+2023-10-25 15:44:26,228 - [rotation_server]b'270'
+2023-10-25 15:44:27,053 - update orientation None->3
+2023-10-25 15:44:27,054 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell wm size
+2023-10-25 15:44:27,092 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell getprop ro.sf.lcd_density
+2023-10-25 15:44:27,120 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell dumpsys SurfaceFlinger
+2023-10-25 15:44:27,153 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell getevent -p
+2023-10-25 15:44:27,331 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell ls /data/local/tmp/minicap
+2023-10-25 15:44:27,342 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell ls /data/local/tmp/minicap
+2023-10-25 15:44:27,364 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell ls /data/local/tmp/minicap.so
+2023-10-25 15:44:27,373 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell ls /data/local/tmp/minicap.so
+2023-10-25 15:44:27,393 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -v 2>&1
+2023-10-25 15:44:27,421 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -v 2>&1
+2023-10-25 15:44:27,440 - version:5
+2023-10-25 15:44:27,440 - skip install minicap
+2023-10-25 15:44:27,440 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -n 'airtest_minicap' -P 1920x1080@1920x1080/270 -s
+2023-10-25 15:44:27,466 - version:5
+2023-10-25 15:44:27,467 - skip install minicap
+2023-10-25 15:44:27,467 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -n 'airtest_minicap' -P 1920x1080@1920x1080/270 -s
+2023-10-25 15:44:27,615 - [rotation_server]b''
+2023-10-25 15:44:27,631 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --no-rebind tcp:18709 localabstract:minicap_18709
+2023-10-25 15:44:27,657 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -n 'minicap_18709' -P 1920x1080@1422x800/270 -l 2>&1
+2023-10-25 15:44:27,698 - [minicap_server]b'PID: 4571'
+2023-10-25 15:44:27,698 - [minicap_server]b'INFO: Using projection 1920x1080@1422x800/3'
+2023-10-25 15:44:27,698 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:241) Creating SurfaceComposerClient'
+2023-10-25 15:44:27,698 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:244) Performing SurfaceComposerClient init check'
+2023-10-25 15:44:27,698 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:255) Creating virtual display'
+2023-10-25 15:44:27,699 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:261) Creating buffer queue'
+2023-10-25 15:44:27,699 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:264) Setting buffer options'
+2023-10-25 15:44:27,699 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:268) Creating CPU consumer'
+2023-10-25 15:44:27,699 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:272) Creating frame waiter'
+2023-10-25 15:44:27,699 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:276) Publishing virtual display'
+2023-10-25 15:44:27,724 - [minicap_server]b'INFO: (jni/minicap/JpgEncoder.cpp:64) Allocating 6268932 bytes for JPG encoder'
+2023-10-25 15:44:27,725 - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:489) Server start'
+2023-10-25 15:44:27,726 - (1, 24, 4571, 1920, 1080, 1422, 800, 3, 2)
+2023-10-25 15:44:27,726 - quirk_flag found, going to resetup
+2023-10-25 15:44:27,726 - minicap stream ends
+2023-10-25 15:44:27,726 - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:492) New client connection'
+2023-10-25 15:44:27,737 - [minicap_server]b''
+2023-10-25 15:44:27,738 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --remove tcp:18709
+2023-10-25 15:44:27,764 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --no-rebind tcp:15697 localabstract:minicap_15697
+2023-10-25 15:44:27,787 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -n 'minicap_15697' -P 1080x1920@800x1422/0 -l 2>&1
+2023-10-25 15:44:27,825 - [minicap_server]b'PID: 4576'
+2023-10-25 15:44:27,826 - [minicap_server]b'INFO: Using projection 1080x1920@800x1422/0'
+2023-10-25 15:44:27,826 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:241) Creating SurfaceComposerClient'
+2023-10-25 15:44:27,826 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:244) Performing SurfaceComposerClient init check'
+2023-10-25 15:44:27,826 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:255) Creating virtual display'
+2023-10-25 15:44:27,826 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:261) Creating buffer queue'
+2023-10-25 15:44:27,826 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:264) Setting buffer options'
+2023-10-25 15:44:27,826 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:268) Creating CPU consumer'
+2023-10-25 15:44:27,826 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:272) Creating frame waiter'
+2023-10-25 15:44:27,827 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:276) Publishing virtual display'
+2023-10-25 15:44:27,858 - [minicap_server]b'INFO: (jni/minicap/JpgEncoder.cpp:64) Allocating 6268932 bytes for JPG encoder'
+2023-10-25 15:44:27,859 - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:489) Server start'
+2023-10-25 15:44:27,860 - (1, 24, 4576, 1080, 1920, 800, 1422, 0, 2)
+2023-10-25 15:44:27,861 - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:492) New client connection'
+2023-10-25 15:44:28,633 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 wait-for-device
+2023-10-25 15:44:28,661 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk
+2023-10-25 15:44:28,695 - Device:emulator-5554 updated <airtest.core.android.android.Android object at 0x000001E9E421E160> -> <airtest.core.android.android.Android object at 0x000001E9E4253D30>
+2023-10-25 15:44:28,696 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell ls -l /data/local/tmp/rotationwatcher.jar
+2023-10-25 15:44:28,729 - install_rotationwatcher skipped
+2023-10-25 15:44:28,730 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell app_process -Djava.class.path=/data/local/tmp/rotationwatcher.jar /data/local/tmp com.example.rotationwatcher.Main
+2023-10-25 15:44:28,869 - [rotation_server]b'270'
+2023-10-25 15:44:29,158 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell ls -l /data/local/tmp/rotationwatcher.jar
+2023-10-25 15:44:29,190 - install_rotationwatcher skipped
+2023-10-25 15:44:29,190 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell app_process -Djava.class.path=/data/local/tmp/rotationwatcher.jar /data/local/tmp com.example.rotationwatcher.Main
+2023-10-25 15:44:29,200 - [rotation_server]b''
+2023-10-25 15:44:29,319 - [rotation_server]b'270'
+2023-10-25 15:44:29,733 - update orientation None->3
+2023-10-25 15:44:29,733 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell wm size
+2023-10-25 15:44:29,768 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell getprop ro.sf.lcd_density
+2023-10-25 15:44:29,796 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell dumpsys SurfaceFlinger
+2023-10-25 15:44:29,829 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell getevent -p
+2023-10-25 15:44:30,194 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell wm size
+2023-10-25 15:44:30,226 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell getprop ro.sf.lcd_density
+2023-10-25 15:44:30,256 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell dumpsys SurfaceFlinger
+2023-10-25 15:44:30,290 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell getevent -p
+2023-10-25 15:44:31,801 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell ls /data/local/tmp/minicap
+2023-10-25 15:44:31,834 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell ls /data/local/tmp/minicap.so
+2023-10-25 15:44:31,864 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -v 2>&1
+2023-10-25 15:44:31,933 - version:5
+2023-10-25 15:44:31,933 - skip install minicap
+2023-10-25 15:44:31,933 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -n 'airtest_minicap' -P 1920x1080@1920x1080/270 -s
+2023-10-25 15:44:32,077 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --no-rebind tcp:15207 localabstract:minicap_15207
+2023-10-25 15:44:32,103 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -n 'minicap_15207' -P 1920x1080@1422x800/270 -l 2>&1
+2023-10-25 15:44:32,143 - [minicap_server]b'PID: 4646'
+2023-10-25 15:44:32,144 - [minicap_server]b'INFO: Using projection 1920x1080@1422x800/3'
+2023-10-25 15:44:32,144 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:241) Creating SurfaceComposerClient'
+2023-10-25 15:44:32,152 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:244) Performing SurfaceComposerClient init check'
+2023-10-25 15:44:32,153 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:255) Creating virtual display'
+2023-10-25 15:44:32,153 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:261) Creating buffer queue'
+2023-10-25 15:44:32,153 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:264) Setting buffer options'
+2023-10-25 15:44:32,153 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:268) Creating CPU consumer'
+2023-10-25 15:44:32,154 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:272) Creating frame waiter'
+2023-10-25 15:44:32,154 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:276) Publishing virtual display'
+2023-10-25 15:44:32,173 - [minicap_server]b'INFO: (jni/minicap/JpgEncoder.cpp:64) Allocating 6268932 bytes for JPG encoder'
+2023-10-25 15:44:32,174 - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:489) Server start'
+2023-10-25 15:44:32,174 - (1, 24, 4646, 1920, 1080, 1422, 800, 3, 2)
+2023-10-25 15:44:32,175 - quirk_flag found, going to resetup
+2023-10-25 15:44:32,175 - minicap stream ends
+2023-10-25 15:44:32,175 - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:492) New client connection'
+2023-10-25 15:44:32,186 - [minicap_server]b''
+2023-10-25 15:44:32,187 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --remove tcp:15207
+2023-10-25 15:44:32,213 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --no-rebind tcp:14292 localabstract:minicap_14292
+2023-10-25 15:44:32,237 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -n 'minicap_14292' -P 1080x1920@800x1422/0 -l 2>&1
+2023-10-25 15:44:32,283 - [minicap_server]b'PID: 4652'
+2023-10-25 15:44:32,284 - [minicap_server]b'INFO: Using projection 1080x1920@800x1422/0'
+2023-10-25 15:44:32,284 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:241) Creating SurfaceComposerClient'
+2023-10-25 15:44:32,284 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:244) Performing SurfaceComposerClient init check'
+2023-10-25 15:44:32,284 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:255) Creating virtual display'
+2023-10-25 15:44:32,284 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:261) Creating buffer queue'
+2023-10-25 15:44:32,285 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:264) Setting buffer options'
+2023-10-25 15:44:32,285 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:268) Creating CPU consumer'
+2023-10-25 15:44:32,285 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:272) Creating frame waiter'
+2023-10-25 15:44:32,285 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:276) Publishing virtual display'
+2023-10-25 15:44:32,294 - [minicap_server]b'INFO: (jni/minicap/JpgEncoder.cpp:64) Allocating 6268932 bytes for JPG encoder'
+2023-10-25 15:44:32,295 - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:489) Server start'
+2023-10-25 15:44:32,296 - (1, 24, 4652, 1080, 1920, 800, 1422, 0, 2)
+2023-10-25 15:44:32,296 - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:492) New client connection'
+2023-10-25 15:44:33,086 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --no-rebind tcp:16864 tcp:5001
+2023-10-25 15:44:36,193 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell input tap 475 188
+2023-10-25 15:44:36,477 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell input tap 475 188
+2023-10-25 15:44:36,756 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell input tap 517 826
+2023-10-25 15:46:42,854 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell input tap 537 1464
+2023-10-25 15:46:52,239 - [rotation_server]b'0'
+2023-10-25 15:46:52,404 - update orientation None->0
+2023-10-25 15:46:52,404 - update_rotation: 0
+2023-10-25 15:46:52,445 - do update rotation
+2023-10-25 15:46:52,463 - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:523) recv error, close connection. errno=9'
+2023-10-25 15:46:52,476 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --remove tcp:14292
+2023-10-25 15:46:52,502 - minicap stream ends
+2023-10-25 15:46:52,502 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --no-rebind tcp:14282 localabstract:minicap_14282
+2023-10-25 15:46:52,533 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -n 'minicap_14282' -P 1920x1080@1422x800/0 -l 2>&1
+2023-10-25 15:46:52,592 - [minicap_server]b'PID: 4727'
+2023-10-25 15:46:52,593 - [minicap_server]b'INFO: Using projection 1920x1080@1422x800/0'
+2023-10-25 15:46:52,593 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:241) Creating SurfaceComposerClient'
+2023-10-25 15:46:52,594 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:244) Performing SurfaceComposerClient init check'
+2023-10-25 15:46:52,594 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:255) Creating virtual display'
+2023-10-25 15:46:52,594 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:261) Creating buffer queue'
+2023-10-25 15:46:52,594 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:264) Setting buffer options'
+2023-10-25 15:46:52,594 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:268) Creating CPU consumer'
+2023-10-25 15:46:52,594 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:272) Creating frame waiter'
+2023-10-25 15:46:52,595 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:276) Publishing virtual display'
+2023-10-25 15:46:52,629 - [minicap_server]b'INFO: (jni/minicap/JpgEncoder.cpp:64) Allocating 6268932 bytes for JPG encoder'
+2023-10-25 15:46:52,630 - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:489) Server start'
+2023-10-25 15:46:52,633 - (1, 24, 4727, 1920, 1080, 1422, 800, 0, 2)
+2023-10-25 15:46:52,633 - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:492) New client connection'
+2023-10-25 15:46:54,209 - [rotation_server]b'270'
+2023-10-25 15:46:54,406 - update orientation 0->3
+2023-10-25 15:46:54,406 - update_rotation: 270
+2023-10-25 15:46:54,499 - do update rotation
+2023-10-25 15:46:54,536 - [minicap_server]b''
+2023-10-25 15:46:54,542 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --remove tcp:14282
+2023-10-25 15:46:54,592 - minicap stream ends
+2023-10-25 15:46:54,593 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --no-rebind tcp:12823 localabstract:minicap_12823
+2023-10-25 15:46:54,618 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -n 'minicap_12823' -P 1080x1920@800x1422/0 -l 2>&1
+2023-10-25 15:46:54,676 - [minicap_server]b'PID: 4812'
+2023-10-25 15:46:54,677 - [minicap_server]b'INFO: Using projection 1080x1920@800x1422/0'
+2023-10-25 15:46:54,677 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:241) Creating SurfaceComposerClient'
+2023-10-25 15:46:54,677 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:244) Performing SurfaceComposerClient init check'
+2023-10-25 15:46:54,677 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:255) Creating virtual display'
+2023-10-25 15:46:54,677 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:261) Creating buffer queue'
+2023-10-25 15:46:54,677 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:264) Setting buffer options'
+2023-10-25 15:46:54,678 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:268) Creating CPU consumer'
+2023-10-25 15:46:54,678 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:272) Creating frame waiter'
+2023-10-25 15:46:54,678 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:276) Publishing virtual display'
+2023-10-25 15:46:54,694 - [minicap_server]b'INFO: (jni/minicap/JpgEncoder.cpp:64) Allocating 6268932 bytes for JPG encoder'
+2023-10-25 15:46:54,695 - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:489) Server start'
+2023-10-25 15:46:54,696 - (1, 24, 4812, 1080, 1920, 800, 1422, 0, 2)
+2023-10-25 15:46:54,696 - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:492) New client connection'
+2023-10-25 15:46:55,098 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --remove tcp:16864
+2023-10-25 15:46:55,126 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --no-rebind tcp:15779 tcp:5001
+2023-10-25 15:46:57,157 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --remove tcp:15779
+2023-10-25 15:46:57,186 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --no-rebind tcp:17070 tcp:5001
+2023-10-25 15:46:59,304 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --remove tcp:17070
+2023-10-25 15:46:59,383 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --no-rebind tcp:16155 tcp:5001
+2023-10-25 15:49:32,554 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --remove tcp:16155
+2023-10-25 15:49:32,606 - [minicap_server]b''
+2023-10-25 15:49:32,607 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --remove tcp:12823
+2023-10-25 15:49:32,676 - minicap stream ends
+2023-10-25 15:49:32,700 - [rotation_server]b''
+2023-10-25 15:49:33,257 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe devices
+2023-10-25 15:49:33,304 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --remove tcp:15697
+2023-10-25 15:49:33,340 - [minicap_server]b''
+2023-10-25 15:49:33,341 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --remove tcp:15697
+2023-10-25 15:49:33,365 - minicap stream ends
+2023-10-25 17:06:36,392 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe devices
+2023-10-25 17:07:10,676 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 wait-for-device
+2023-10-25 17:07:10,702 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk
+2023-10-25 17:07:10,733 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell ls -l /data/local/tmp/rotationwatcher.jar
+2023-10-25 17:07:10,763 - install_rotationwatcher skipped
+2023-10-25 17:07:10,764 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell app_process -Djava.class.path=/data/local/tmp/rotationwatcher.jar /data/local/tmp com.example.rotationwatcher.Main
+2023-10-25 17:07:10,927 - [rotation_server]b'0'
+2023-10-25 17:07:11,767 - update orientation None->0
+2023-10-25 17:07:11,767 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell wm size
+2023-10-25 17:07:11,827 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell getprop ro.sf.lcd_density
+2023-10-25 17:07:11,856 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell dumpsys SurfaceFlinger
+2023-10-25 17:07:11,888 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell getevent -p
+2023-10-25 17:07:12,065 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell ls /data/local/tmp/minicap
+2023-10-25 17:07:12,094 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell ls /data/local/tmp/minicap.so
+2023-10-25 17:07:12,122 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -v 2>&1
+2023-10-25 17:07:12,162 - version:5
+2023-10-25 17:07:12,162 - skip install minicap
+2023-10-25 17:07:12,163 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -n 'airtest_minicap' -P 1920x1080@1920x1080/0 -s
+2023-10-25 17:07:12,338 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --no-rebind tcp:13947 localabstract:minicap_13947
+2023-10-25 17:07:12,364 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -n 'minicap_13947' -P 1920x1080@1422x800/0 -l 2>&1
+2023-10-25 17:07:12,405 - [minicap_server]b'PID: 8268'
+2023-10-25 17:07:12,405 - [minicap_server]b'INFO: Using projection 1920x1080@1422x800/0'
+2023-10-25 17:07:12,406 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:241) Creating SurfaceComposerClient'
+2023-10-25 17:07:12,406 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:244) Performing SurfaceComposerClient init check'
+2023-10-25 17:07:12,406 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:255) Creating virtual display'
+2023-10-25 17:07:12,406 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:261) Creating buffer queue'
+2023-10-25 17:07:12,406 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:264) Setting buffer options'
+2023-10-25 17:07:12,406 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:268) Creating CPU consumer'
+2023-10-25 17:07:12,406 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:272) Creating frame waiter'
+2023-10-25 17:07:12,406 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:276) Publishing virtual display'
+2023-10-25 17:07:12,445 - [minicap_server]b'INFO: (jni/minicap/JpgEncoder.cpp:64) Allocating 6268932 bytes for JPG encoder'
+2023-10-25 17:07:12,445 - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:489) Server start'
+2023-10-25 17:07:12,446 - (1, 24, 8268, 1920, 1080, 1422, 800, 0, 2)
+2023-10-25 17:07:12,446 - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:492) New client connection'
+2023-10-25 17:07:13,343 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --no-rebind tcp:17971 tcp:5001
+2023-10-25 17:07:15,123 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell input tap 273 244
+2023-10-25 17:07:15,358 - [rotation_server]b'270'
+2023-10-25 17:07:15,477 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --remove tcp:17971
+2023-10-25 17:07:15,504 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --no-rebind tcp:18807 tcp:5001
+2023-10-25 17:07:15,786 - update orientation 0->3
+2023-10-25 17:07:15,788 - update_rotation: 270
+2023-10-25 17:07:15,792 - do update rotation
+2023-10-25 17:07:15,829 - [minicap_server]b''
+2023-10-25 17:07:15,829 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --remove tcp:13947
+2023-10-25 17:07:15,855 - minicap stream ends
+2023-10-25 17:07:15,856 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --no-rebind tcp:17121 localabstract:minicap_17121
+2023-10-25 17:07:15,880 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -n 'minicap_17121' -P 1080x1920@800x1422/0 -l 2>&1
+2023-10-25 17:07:15,941 - [minicap_server]b'PID: 8337'
+2023-10-25 17:07:15,942 - [minicap_server]b'INFO: Using projection 1080x1920@800x1422/0'
+2023-10-25 17:07:15,942 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:241) Creating SurfaceComposerClient'
+2023-10-25 17:07:15,943 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:244) Performing SurfaceComposerClient init check'
+2023-10-25 17:07:15,944 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:255) Creating virtual display'
+2023-10-25 17:07:15,944 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:261) Creating buffer queue'
+2023-10-25 17:07:15,944 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:264) Setting buffer options'
+2023-10-25 17:07:15,944 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:268) Creating CPU consumer'
+2023-10-25 17:07:15,945 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:272) Creating frame waiter'
+2023-10-25 17:07:15,945 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:276) Publishing virtual display'
+2023-10-25 17:07:15,960 - [minicap_server]b'INFO: (jni/minicap/JpgEncoder.cpp:64) Allocating 6268932 bytes for JPG encoder'
+2023-10-25 17:07:15,960 - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:489) Server start'
+2023-10-25 17:07:15,962 - (1, 24, 8337, 1080, 1920, 800, 1422, 0, 2)
+2023-10-25 17:07:15,962 - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:492) New client connection'
+2023-10-25 17:07:17,549 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --remove tcp:18807
+2023-10-25 17:07:17,576 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --no-rebind tcp:13490 tcp:5001
+2023-10-25 17:07:19,605 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --remove tcp:13490
+2023-10-25 17:07:19,635 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --no-rebind tcp:15371 tcp:5001
+2023-10-25 17:15:17,444 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell input tap 513 913
+2023-10-25 17:15:27,415 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell getprop ro.product.device
+2023-10-25 17:15:27,459 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell ime list -a
+2023-10-25 17:15:27,539 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell pm list packages -3
+2023-10-25 17:17:30,344 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --remove tcp:15371
+2023-10-25 17:17:45,972 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --no-rebind tcp:11232 tcp:5001
+2023-10-25 17:19:41,761 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --remove tcp:11232
+2023-10-25 17:22:07,790 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --no-rebind tcp:11829 tcp:5001
+2023-10-25 17:28:35,476 - [minicap_server]b''
+2023-10-25 17:28:35,478 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --remove tcp:17121
+2023-10-25 17:28:35,535 - minicap stream ends
+2023-10-25 17:28:35,559 - [rotation_server]b''
+2023-10-25 17:28:35,915 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --remove tcp:11829
+2023-10-25 17:28:36,466 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe devices
+2023-10-25 18:03:32,758 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe devices
+2023-10-25 18:08:23,188 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe devices
+2023-10-25 18:08:27,878 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe connect 127.0.0.1:7555
+2023-10-25 18:08:39,907 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe devices
+2023-10-25 18:08:43,067 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe devices
+2023-10-25 18:08:51,986 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 wait-for-device
+2023-10-25 18:08:52,012 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk
+2023-10-25 18:08:52,041 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell ls -l /data/local/tmp/rotationwatcher.jar
+2023-10-25 18:08:52,070 - install_rotationwatcher skipped
+2023-10-25 18:08:52,070 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell app_process -Djava.class.path=/data/local/tmp/rotationwatcher.jar /data/local/tmp com.example.rotationwatcher.Main
+2023-10-25 18:08:52,231 - [rotation_server]b'0'
+2023-10-25 18:08:53,074 - update orientation None->0
+2023-10-25 18:08:53,074 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell wm size
+2023-10-25 18:08:53,121 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell getprop ro.sf.lcd_density
+2023-10-25 18:08:53,150 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell dumpsys SurfaceFlinger
+2023-10-25 18:08:53,181 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell getevent -p
+2023-10-25 18:08:53,471 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell ls /data/local/tmp/minicap
+2023-10-25 18:08:53,500 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell ls /data/local/tmp/minicap.so
+2023-10-25 18:08:53,529 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -v 2>&1
+2023-10-25 18:08:53,579 - version:5
+2023-10-25 18:08:53,579 - skip install minicap
+2023-10-25 18:08:53,580 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -n 'airtest_minicap' -P 1920x1080@1920x1080/0 -s
+2023-10-25 18:08:53,759 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --no-rebind tcp:17707 localabstract:minicap_17707
+2023-10-25 18:08:53,795 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -n 'minicap_17707' -P 1920x1080@1422x800/0 -l 2>&1
+2023-10-25 18:08:53,846 - [minicap_server]b'PID: 9797'
+2023-10-25 18:08:53,847 - [minicap_server]b'INFO: Using projection 1920x1080@1422x800/0'
+2023-10-25 18:08:53,847 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:241) Creating SurfaceComposerClient'
+2023-10-25 18:08:53,848 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:244) Performing SurfaceComposerClient init check'
+2023-10-25 18:08:53,848 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:255) Creating virtual display'
+2023-10-25 18:08:53,848 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:261) Creating buffer queue'
+2023-10-25 18:08:53,848 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:264) Setting buffer options'
+2023-10-25 18:08:53,849 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:268) Creating CPU consumer'
+2023-10-25 18:08:53,849 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:272) Creating frame waiter'
+2023-10-25 18:08:53,849 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:276) Publishing virtual display'
+2023-10-25 18:08:53,874 - [minicap_server]b'INFO: (jni/minicap/JpgEncoder.cpp:64) Allocating 6268932 bytes for JPG encoder'
+2023-10-25 18:08:53,874 - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:489) Server start'
+2023-10-25 18:08:53,875 - (1, 24, 9797, 1920, 1080, 1422, 800, 0, 2)
+2023-10-25 18:08:53,875 - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:492) New client connection'
+2023-10-25 18:08:58,402 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell input tap 204 281
+2023-10-25 18:08:58,650 - [rotation_server]b'270'
+2023-10-25 18:08:59,088 - update orientation 0->3
+2023-10-25 18:08:59,089 - update_rotation: 270
+2023-10-25 18:08:59,100 - do update rotation
+2023-10-25 18:08:59,155 - [minicap_server]b''
+2023-10-25 18:08:59,156 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --remove tcp:17707
+2023-10-25 18:08:59,183 - minicap stream ends
+2023-10-25 18:08:59,183 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --no-rebind tcp:14119 localabstract:minicap_14119
+2023-10-25 18:08:59,209 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -n 'minicap_14119' -P 1080x1920@800x1422/0 -l 2>&1
+2023-10-25 18:08:59,256 - [minicap_server]b'PID: 9877'
+2023-10-25 18:08:59,256 - [minicap_server]b'INFO: Using projection 1080x1920@800x1422/0'
+2023-10-25 18:08:59,257 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:241) Creating SurfaceComposerClient'
+2023-10-25 18:08:59,257 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:244) Performing SurfaceComposerClient init check'
+2023-10-25 18:08:59,258 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:255) Creating virtual display'
+2023-10-25 18:08:59,258 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:261) Creating buffer queue'
+2023-10-25 18:08:59,258 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:264) Setting buffer options'
+2023-10-25 18:08:59,258 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:268) Creating CPU consumer'
+2023-10-25 18:08:59,259 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:272) Creating frame waiter'
+2023-10-25 18:08:59,259 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:276) Publishing virtual display'
+2023-10-25 18:08:59,273 - [minicap_server]b'INFO: (jni/minicap/JpgEncoder.cpp:64) Allocating 6268932 bytes for JPG encoder'
+2023-10-25 18:08:59,274 - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:489) Server start'
+2023-10-25 18:08:59,274 - (1, 24, 9877, 1080, 1920, 800, 1422, 0, 2)
+2023-10-25 18:08:59,275 - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:492) New client connection'
+2023-10-25 18:09:04,566 - [rotation_server]b'0'
+2023-10-25 18:09:05,038 - [rotation_server]b'270'
+2023-10-25 18:09:05,101 - update orientation 3->0
+2023-10-25 18:09:05,101 - update_rotation: 0
+2023-10-25 18:09:05,102 - update orientation 0->3
+2023-10-25 18:09:05,102 - update_rotation: 270
+2023-10-25 18:09:05,108 - do update rotation
+2023-10-25 18:09:05,133 - [minicap_server]b''
+2023-10-25 18:09:05,133 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --remove tcp:14119
+2023-10-25 18:09:05,160 - minicap stream ends
+2023-10-25 18:09:05,160 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --no-rebind tcp:17094 localabstract:minicap_17094
+2023-10-25 18:09:05,187 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -n 'minicap_17094' -P 1080x1920@800x1422/0 -l 2>&1
+2023-10-25 18:09:05,244 - [minicap_server]b'PID: 10060'
+2023-10-25 18:09:05,244 - [minicap_server]b'INFO: Using projection 1080x1920@800x1422/0'
+2023-10-25 18:09:05,245 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:241) Creating SurfaceComposerClient'
+2023-10-25 18:09:05,245 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:244) Performing SurfaceComposerClient init check'
+2023-10-25 18:09:05,246 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:255) Creating virtual display'
+2023-10-25 18:09:05,246 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:261) Creating buffer queue'
+2023-10-25 18:09:05,246 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:264) Setting buffer options'
+2023-10-25 18:09:05,246 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:268) Creating CPU consumer'
+2023-10-25 18:09:05,246 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:272) Creating frame waiter'
+2023-10-25 18:09:05,247 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:276) Publishing virtual display'
+2023-10-25 18:09:05,259 - [minicap_server]b'INFO: (jni/minicap/JpgEncoder.cpp:64) Allocating 6268932 bytes for JPG encoder'
+2023-10-25 18:09:05,259 - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:489) Server start'
+2023-10-25 18:09:05,262 - (1, 24, 10060, 1080, 1920, 800, 1422, 0, 2)
+2023-10-25 18:09:05,263 - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:492) New client connection'
+2023-10-25 18:09:22,117 - [rotation_server]b'0'
+2023-10-25 18:09:22,188 - update orientation 3->0
+2023-10-25 18:09:22,188 - update_rotation: 0
+2023-10-25 18:09:22,189 - do update rotation
+2023-10-25 18:09:22,211 - [minicap_server]b''
+2023-10-25 18:09:22,212 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --remove tcp:17094
+2023-10-25 18:09:22,239 - minicap stream ends
+2023-10-25 18:09:22,240 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --no-rebind tcp:13199 localabstract:minicap_13199
+2023-10-25 18:09:22,268 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -n 'minicap_13199' -P 1920x1080@1422x800/0 -l 2>&1
+2023-10-25 18:09:22,341 - [minicap_server]b'PID: 10115'
+2023-10-25 18:09:22,341 - [minicap_server]b'INFO: Using projection 1920x1080@1422x800/0'
+2023-10-25 18:09:22,342 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:241) Creating SurfaceComposerClient'
+2023-10-25 18:09:22,342 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:244) Performing SurfaceComposerClient init check'
+2023-10-25 18:09:22,343 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:255) Creating virtual display'
+2023-10-25 18:09:22,343 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:261) Creating buffer queue'
+2023-10-25 18:09:22,343 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:264) Setting buffer options'
+2023-10-25 18:09:22,343 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:268) Creating CPU consumer'
+2023-10-25 18:09:22,343 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:272) Creating frame waiter'
+2023-10-25 18:09:22,344 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:276) Publishing virtual display'
+2023-10-25 18:09:22,346 - [rotation_server]b'270'
+2023-10-25 18:09:22,378 - [minicap_server]b'INFO: (jni/minicap/JpgEncoder.cpp:64) Allocating 6268932 bytes for JPG encoder'
+2023-10-25 18:09:22,379 - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:489) Server start'
+2023-10-25 18:09:22,380 - (1, 24, 10115, 1920, 1080, 1422, 800, 0, 2)
+2023-10-25 18:09:22,380 - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:492) New client connection'
+2023-10-25 18:09:23,190 - update orientation 0->3
+2023-10-25 18:09:23,190 - update_rotation: 270
+2023-10-25 18:09:23,217 - do update rotation
+2023-10-25 18:09:23,246 - [minicap_server]b''
+2023-10-25 18:09:23,249 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --remove tcp:13199
+2023-10-25 18:09:23,274 - minicap stream ends
+2023-10-25 18:09:23,274 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --no-rebind tcp:18249 localabstract:minicap_18249
+2023-10-25 18:09:23,299 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -n 'minicap_18249' -P 1080x1920@800x1422/0 -l 2>&1
+2023-10-25 18:09:23,358 - [minicap_server]b'PID: 10154'
+2023-10-25 18:09:23,359 - [minicap_server]b'INFO: Using projection 1080x1920@800x1422/0'
+2023-10-25 18:09:23,359 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:241) Creating SurfaceComposerClient'
+2023-10-25 18:09:23,360 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:244) Performing SurfaceComposerClient init check'
+2023-10-25 18:09:23,360 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:255) Creating virtual display'
+2023-10-25 18:09:23,360 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:261) Creating buffer queue'
+2023-10-25 18:09:23,360 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:264) Setting buffer options'
+2023-10-25 18:09:23,360 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:268) Creating CPU consumer'
+2023-10-25 18:09:23,360 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:272) Creating frame waiter'
+2023-10-25 18:09:23,361 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:276) Publishing virtual display'
+2023-10-25 18:09:23,384 - [minicap_server]b'INFO: (jni/minicap/JpgEncoder.cpp:64) Allocating 6268932 bytes for JPG encoder'
+2023-10-25 18:09:23,384 - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:489) Server start'
+2023-10-25 18:09:23,386 - (1, 24, 10154, 1080, 1920, 800, 1422, 0, 2)
+2023-10-25 18:09:23,386 - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:492) New client connection'
+2023-10-25 18:09:50,552 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --no-rebind tcp:18809 tcp:5001
+2023-10-25 18:13:39,332 - [rotation_server]b'0'
+2023-10-25 18:13:39,575 - [rotation_server]b'270'
+2023-10-25 18:13:39,814 - update orientation 3->0
+2023-10-25 18:13:39,816 - update_rotation: 0
+2023-10-25 18:13:39,816 - update orientation 0->3
+2023-10-25 18:13:39,816 - update_rotation: 270
+2023-10-25 18:13:39,850 - do update rotation
+2023-10-25 18:13:39,897 - [minicap_server]b''
+2023-10-25 18:13:39,898 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --remove tcp:18249
+2023-10-25 18:13:39,931 - minicap stream ends
+2023-10-25 18:13:39,932 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --no-rebind tcp:15470 localabstract:minicap_15470
+2023-10-25 18:13:39,962 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -n 'minicap_15470' -P 1080x1920@800x1422/0 -l 2>&1
+2023-10-25 18:13:40,031 - [minicap_server]b'PID: 10249'
+2023-10-25 18:13:40,031 - [minicap_server]b'INFO: Using projection 1080x1920@800x1422/0'
+2023-10-25 18:13:40,032 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:241) Creating SurfaceComposerClient'
+2023-10-25 18:13:40,032 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:244) Performing SurfaceComposerClient init check'
+2023-10-25 18:13:40,033 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:255) Creating virtual display'
+2023-10-25 18:13:40,033 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:261) Creating buffer queue'
+2023-10-25 18:13:40,033 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:264) Setting buffer options'
+2023-10-25 18:13:40,033 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:268) Creating CPU consumer'
+2023-10-25 18:13:40,034 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:272) Creating frame waiter'
+2023-10-25 18:13:40,034 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:276) Publishing virtual display'
+2023-10-25 18:13:40,049 - [minicap_server]b'INFO: (jni/minicap/JpgEncoder.cpp:64) Allocating 6268932 bytes for JPG encoder'
+2023-10-25 18:13:40,050 - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:489) Server start'
+2023-10-25 18:13:40,051 - (1, 24, 10249, 1080, 1920, 800, 1422, 0, 2)
+2023-10-25 18:13:40,051 - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:492) New client connection'
+2023-10-25 18:13:51,141 - [rotation_server]b'0'
+2023-10-25 18:13:51,386 - [rotation_server]b'270'
+2023-10-25 18:13:51,860 - update orientation 3->0
+2023-10-25 18:13:51,862 - update_rotation: 0
+2023-10-25 18:13:51,862 - update orientation 0->3
+2023-10-25 18:13:51,863 - update_rotation: 270
+2023-10-25 18:13:51,871 - do update rotation
+2023-10-25 18:13:51,900 - [minicap_server]b''
+2023-10-25 18:13:51,900 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --remove tcp:15470
+2023-10-25 18:13:51,929 - minicap stream ends
+2023-10-25 18:13:51,930 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --no-rebind tcp:14644 localabstract:minicap_14644
+2023-10-25 18:13:51,955 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -n 'minicap_14644' -P 1080x1920@800x1422/0 -l 2>&1
+2023-10-25 18:13:51,994 - [minicap_server]b'PID: 10316'
+2023-10-25 18:13:51,994 - [minicap_server]b'INFO: Using projection 1080x1920@800x1422/0'
+2023-10-25 18:13:51,995 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:241) Creating SurfaceComposerClient'
+2023-10-25 18:13:51,995 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:244) Performing SurfaceComposerClient init check'
+2023-10-25 18:13:51,996 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:255) Creating virtual display'
+2023-10-25 18:13:51,996 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:261) Creating buffer queue'
+2023-10-25 18:13:51,996 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:264) Setting buffer options'
+2023-10-25 18:13:51,998 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:268) Creating CPU consumer'
+2023-10-25 18:13:51,998 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:272) Creating frame waiter'
+2023-10-25 18:13:51,999 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:276) Publishing virtual display'
+2023-10-25 18:13:52,025 - [minicap_server]b'INFO: (jni/minicap/JpgEncoder.cpp:64) Allocating 6268932 bytes for JPG encoder'
+2023-10-25 18:13:52,025 - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:489) Server start'
+2023-10-25 18:13:52,027 - (1, 24, 10316, 1080, 1920, 800, 1422, 0, 2)
+2023-10-25 18:13:52,027 - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:492) New client connection'
+2023-10-25 18:14:06,253 - [rotation_server]b'0'
+2023-10-25 18:14:06,402 - [rotation_server]b'270'
+2023-10-25 18:14:06,936 - update orientation 3->0
+2023-10-25 18:14:06,936 - update_rotation: 0
+2023-10-25 18:14:06,937 - update orientation 0->3
+2023-10-25 18:14:06,937 - update_rotation: 270
+2023-10-25 18:14:06,938 - do update rotation
+2023-10-25 18:14:06,966 - [minicap_server]b''
+2023-10-25 18:14:06,967 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --remove tcp:14644
+2023-10-25 18:14:06,996 - minicap stream ends
+2023-10-25 18:14:06,997 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --no-rebind tcp:18964 localabstract:minicap_18964
+2023-10-25 18:14:07,023 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -n 'minicap_18964' -P 1080x1920@800x1422/0 -l 2>&1
+2023-10-25 18:14:07,074 - [minicap_server]b'PID: 10383'
+2023-10-25 18:14:07,074 - [minicap_server]b'INFO: Using projection 1080x1920@800x1422/0'
+2023-10-25 18:14:07,075 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:241) Creating SurfaceComposerClient'
+2023-10-25 18:14:07,075 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:244) Performing SurfaceComposerClient init check'
+2023-10-25 18:14:07,075 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:255) Creating virtual display'
+2023-10-25 18:14:07,076 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:261) Creating buffer queue'
+2023-10-25 18:14:07,076 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:264) Setting buffer options'
+2023-10-25 18:14:07,076 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:268) Creating CPU consumer'
+2023-10-25 18:14:07,076 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:272) Creating frame waiter'
+2023-10-25 18:14:07,076 - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_28.cpp:276) Publishing virtual display'
+2023-10-25 18:14:07,101 - [minicap_server]b'INFO: (jni/minicap/JpgEncoder.cpp:64) Allocating 6268932 bytes for JPG encoder'
+2023-10-25 18:14:07,102 - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:489) Server start'
+2023-10-25 18:14:07,103 - (1, 24, 10383, 1080, 1920, 800, 1422, 0, 2)
+2023-10-25 18:14:07,103 - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:492) New client connection'
+2023-10-25 18:16:02,743 - [minicap_server]b''
+2023-10-25 18:16:02,744 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --remove tcp:18964
+2023-10-25 18:16:02,769 - minicap stream ends
+2023-10-25 18:16:02,781 - [rotation_server]b''
+2023-10-25 18:16:03,539 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s emulator-5554 forward --remove tcp:18809
+2023-10-25 18:16:04,558 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe devices
+2023-10-26 16:38:59,557 - D:\Downloads\AirtestIDE-win-1.2.15\AirtestIDE\airtest\core\android\static\adb\windows\adb.exe devices
