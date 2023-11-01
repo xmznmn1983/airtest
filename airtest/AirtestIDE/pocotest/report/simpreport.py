@@ -1,4 +1,5 @@
 import os.path
+import time
 
 from airtest.report.report import simple_report
 
@@ -15,5 +16,5 @@ def report():
             print("exist")
         else:
             os.mkdir(i, 777)
-
-    simple_report(filepath, logpath, logfile, output)
+    time.sleep(20)
+    simple_report(filepath=filepath, logpath=logpath, logfile=None, output=output)
