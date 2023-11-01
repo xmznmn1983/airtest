@@ -17,4 +17,4 @@ def report():
         else:
             os.mkdir(i, 777)
     time.sleep(20)
-    simple_report(filepath=filepath, logpath=logpath, logfile=None, output=output)
+    simple_report(filepath=path, logpath=logpath, logfile=None, output=output)
