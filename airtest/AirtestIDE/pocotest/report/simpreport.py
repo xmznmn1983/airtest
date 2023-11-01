@@ -4,7 +4,7 @@ from airtest.report.report import simple_report
 
 def report():
 
-    path = "C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\airtest\\airtest\\AirtestIDE\\pocotest\\"
+    path = "C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\airtest\\airtest\\AirtestIDE\\pocotest\\report\\"
     filepath = path + "filepath"
     logpath = path + "logpath"
     logfile = path + "logfile"
@@ -14,6 +14,6 @@ def report():
         if os.path.exists(i):
             print("exist")
         else:
-            os.mkdir(i)
-            
+            os.mkdir(i, 777)
+
     simple_report(filepath, logpath, logfile, output)
