@@ -6,9 +6,7 @@ from airtest.cli.parser import cli_setup
 from airtest.core.api import *
 from report.simpreport import report
 
-setup = sys.argv[1]
-closeGame = sys.argv[3]
-testCase = sys.argv[2]
+
 
 
 class BingoVTestCase:
@@ -43,7 +41,7 @@ class BingoVTestCase:
         print("close game...")
         time.sleep(1)
 
-    def runTest(self):
+    def runTest(self, setup, testCase, closeGame):
         if setup == "install":
             self.installGame()
         self.runGame()
@@ -57,8 +55,6 @@ class BingoVTestCase:
         if closeGame == "close":
             self.closeGame()
 
-
-
-    def tearDown(self):
-        self.runTest()
+    def tearDown(self, setup, testCase, closeGame):
+        self.runTest(setup, testCase, closeGame)
         report()
