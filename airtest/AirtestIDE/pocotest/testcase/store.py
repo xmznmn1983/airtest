@@ -5,7 +5,7 @@ import action as action
 tickets = action.poco("TicketPage").offspring("Content").offspring("Content").child()
 
 
-def openBingoStore():
+def openTicketsBar():
     action.click_button(el.ticket)
 
 

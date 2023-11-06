@@ -6,6 +6,11 @@ from airtest.cli.parser import cli_setup
 from airtest.core.api import *
 from report.simpreport import report
 
+setup = sys.argv[1]
+closeGame = sys.argv[3]
+testCase = sys.argv[2]
+
+
 class BingoVTestCase:
     def __init__(self):
         os.system("adb devices")
@@ -20,30 +25,40 @@ class BingoVTestCase:
             auto_setup(__file__, logdir=self.log_path,
                        devices=[self.test_device], project_root=self.test_log)
 
+    def installGame(self):
+        uninstall(self.app_package)
+        print("uninstall...")
+        time.sleep(1)
+        install(self.package_path)
+        print("install...")
+        time.sleep(1)
 
     def runGame(self):
-        #uninstall(self.app_package)
-        time.sleep(1)
-        #install(self.package_path)
-        time.sleep(1)
         start_app(self.app_package)
-        #time.sleep(20)
-        print("start login...")
-        from action import click_button
-        #click_button(self.element_path.login)
+        print("start game...")
         time.sleep(1)
-        # stop_app(self.app_package)
-        # generate html report
+
+    def closeGame(self):
+        stop_app(self.app_package)
+        print("close game...")
+        time.sleep(1)
 
     def runTest(self):
+        if setup == "install":
+            self.installGame()
         self.runGame()
         time.sleep(20)
-        print("start checktickets...")
-        import testcase.store as store
-        store.openBingoStore()
-        store.checkTickets()
+        if testCase == "shore":
+            print("start checktickets...")
+            import testcase.store as store
+            store.openTicketsBar()
+            store.checkTickets()
+
+        if closeGame == "close":
+            self.closeGame()
+
+
 
     def tearDown(self):
         self.runTest()
-        stop_app(self.app_package)
         report()
