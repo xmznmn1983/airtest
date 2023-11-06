@@ -1,9 +1,10 @@
 import sys
+import time
+
 from airtest.core.api import *
 from airtest.cli.parser import cli_setup
 from airtest.core.api import *
 from report.simpreport import report
-
 
 class BingoVTestCase:
     def __init__(self):
@@ -14,29 +15,35 @@ class BingoVTestCase:
         self.element_path = element_path
         self.test_log = os.path.dirname(os.path.abspath(__file__)) + "\\report"
         self.log_path = os.path.dirname(os.path.abspath(__file__)) + "\\report\\log"
-        self.test_device = "Android://127.0.0.1:5037/R58M66VY68Y"
+        self.test_device = "Android://127.0.0.1:5037/R5CT319J77J"
         if not cli_setup():
             auto_setup(__file__, logdir=self.log_path,
                        devices=[self.test_device], project_root=self.test_log)
 
 
     def runGame(self):
-        uninstall(self.app_package)
+        #uninstall(self.app_package)
         time.sleep(1)
-        install(self.package_path)
+        #install(self.package_path)
         time.sleep(1)
         start_app(self.app_package)
-        time.sleep(10)
-        # print("start...")
+        #time.sleep(20)
+        print("start login...")
         from action import click_button
-        click_button(self.element_path.login)
+        #click_button(self.element_path.login)
         time.sleep(1)
-        stop_app(self.app_package)
+        # stop_app(self.app_package)
         # generate html report
 
     def runTest(self):
         self.runGame()
+        time.sleep(20)
+        print("start checktickets...")
+        import testcase.store as store
+        store.openBingoStore()
+        store.checkTickets()
 
     def tearDown(self):
         self.runTest()
+        stop_app(self.app_package)
         report()
