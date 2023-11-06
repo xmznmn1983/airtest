@@ -48,7 +48,7 @@ class BingoVTestCase:
             self.installGame()
         self.runGame()
         time.sleep(20)
-        if testCase == "shore":
+        if testCase == "store":
             print("start checktickets...")
             import testcase.store as store
             store.openTicketsBar()
