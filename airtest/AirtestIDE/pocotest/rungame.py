@@ -7,54 +7,23 @@ from airtest.core.api import *
 from report.simpreport import report
 
 
-
-
-class BingoVTestCase:
+class BingoVSetup:
     def __init__(self):
         os.system("adb devices")
-        self.app_package = "com.bingo.cruise.free.best.top.game"
-        self.package_path = "D:/Downloads/BingoVoyage_dev_android_package_1613_pocotest_test_1.22.1.apk"
         import element_path
         self.element_path = element_path
         self.test_log = os.path.dirname(os.path.abspath(__file__)) + "\\report"
         self.log_path = os.path.dirname(os.path.abspath(__file__)) + "\\report\\log"
         self.test_device = "Android://127.0.0.1:5037/R5CT319J77J"
+
+    def setupGame(self):
         if not cli_setup():
             auto_setup(__file__, logdir=self.log_path,
-                       devices=[self.test_device], project_root=self.test_log)
+                       devices=[self.test_device], project_root=self.test_log, compress=90)
 
-    def installGame(self):
-        uninstall(self.app_package)
-        print("uninstall...")
-        time.sleep(1)
-        install(self.package_path)
-        print("install...")
-        time.sleep(1)
 
-    def runGame(self):
-        start_app(self.app_package)
-        print("start game...")
-        time.sleep(1)
+BingoVSetup().setupGame()
 
-    def closeGame(self):
-        stop_app(self.app_package)
-        print("close game...")
-        time.sleep(1)
 
-    def runTest(self, setup, testCase, closeGame):
-        if setup == "install":
-            self.installGame()
-        self.runGame()
-        time.sleep(20)
-        if testCase == "store":
-            print("start checktickets...")
-            import testcase.store as store
-            store.openTicketsBar()
-            store.checkTickets()
 
-        if closeGame == "close":
-            self.closeGame()
 
-    def tearDown(self, setup, testCase, closeGame):
-        self.runTest(setup, testCase, closeGame)
-        report()
